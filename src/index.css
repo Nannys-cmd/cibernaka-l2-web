@@ -40,3 +40,45 @@ body {
   max-width: 1100px;
   margin: 0 auto;
 }
+
+.title-dramatico {
+  font-family: 'MedievalSharp', cursive;
+  font-size: 3rem;
+  text-align: center;
+  color: #ffcc70;
+  text-shadow: 
+    0 0 10px #ffcc70,
+    0 0 20px #ff9966,
+    0 0 40px #ff6666;
+  animation: aparecer 2s ease-out, resplandor 3s infinite alternate;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+    filter: blur(3px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes resplandor {
+  0% {
+    text-shadow:
+      0 0 10px #ffcc70,
+      0 0 20px #ff9966,
+      0 0 40px #ff6666;
+  }
+  100% {
+    text-shadow:
+      0 0 20px #ffd700,
+      0 0 30px #ff8c00,
+      0 0 60px #ff4500;
+  }
+}

@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import VotingSection from "./components/VotingSection";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import LoreSection from "./components/LoreSection";
 import "./App.css";
 
 function App() {
@@ -14,8 +15,23 @@ function App() {
       <main className="container">
         {/* Intro */}
         <section id="inicio" className="intro-section">
-          <h1>Bienvenidos a CiberNaka L2</h1>
+          <h1 className="title-dramatico">CiberNaka L2</h1>
           <p>Un mundo donde el caos y la gloria se cruzan en cada batalla.</p>
+
+          <LoreSection />
+
+          <section id="historia" className="history-section container">
+            <h2>Historia y Características</h2>
+            <div className="history-cards">
+              <article className="history-card">
+                <h3>¿Por qué CiberNaka L2?</h3>
+                <p>
+                  Porque combinamos un ambiente místico, comunidad apasionada y
+                  servidores optimizados para que vivas la mejor experiencia H5.
+                </p>
+              </article>
+            </div>
+          </section>
 
           <div className="servers-container">
             {/* Server Anakim */}

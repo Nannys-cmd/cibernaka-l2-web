@@ -43,10 +43,68 @@ header {
 }
 
 .logo {
-  color: var(--color-principal);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: 'MedievalSharp', cursive;
   font-size: 1.8rem;
-  font-weight: bold;
-  cursor: default;
+  color: var(--color-principal);
+}
+
+.logo-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 15px #ff6600, 0 0 30px #ff3300;
+  animation: glowPulse 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.logo-img:hover {
+  transform: rotate(-8deg) scale(1.1);
+}
+
+.logo-text {
+  text-shadow: 0 0 8px #ff9966;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 10px #ff6600, 0 0 25px #ff3300;
+  }
+  50% {
+    box-shadow: 0 0 20px #ff9933, 0 0 40px #ff5511;
+  }
+}
+
+/* Lore Section */
+.lore-section {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: var(--color-texto);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.lore-section h2 {
+  color: var(--color-principal);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.lore-section h3 {
+  margin-top: 2rem;
+  color: var(--color-principal);
+  font-size: 1.5rem;
+}
+
+.lore-section p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  text-align: justify;
 }
 
 .nav-links {
@@ -105,6 +163,56 @@ header {
 
 .server-card p {
   margin: 0.3rem 0;
+  color: var(--color-texto);
+}
+
+.history-section {
+  padding: 3rem 0;
+  color: var(--color-texto);
+  text-align: center;
+}
+
+.history-section h2 {
+  font-family: 'Cinzel', serif; /* Tipografía mística y clásica */
+  font-size: 2.8rem;
+  color: var(--color-principal);
+  margin-bottom: 2rem;
+  text-shadow: 0 0 8px rgba(230, 57, 70, 0.7);
+}
+
+.history-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.history-card {
+  background: rgba(40, 0, 60, 0.6);
+  border: 1.5px solid var(--color-principal);
+  border-radius: 12px;
+  padding: 1.8rem 1.5rem;
+  box-shadow: 0 0 15px rgba(230, 57, 70, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.history-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(230, 57, 70, 0.7);
+}
+
+.history-card h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--color-principal);
+  text-shadow: 0 0 6px rgba(230, 57, 70, 0.8);
+}
+
+.history-card p {
+  font-size: 1rem;
+  line-height: 1.5;
   color: var(--color-texto);
 }
 
