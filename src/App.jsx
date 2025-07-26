@@ -1,10 +1,11 @@
 // src/App.jsx
 import React from "react";
 import Header from "./components/Header";
+import LoreSection from "./components/LoreSection";
+import TimelineSection from "./components/TimelineSection";
 import VotingSection from "./components/VotingSection";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
-import LoreSection from "./components/LoreSection";
 import "./App.css";
 
 function App() {
@@ -13,47 +14,52 @@ function App() {
       <Header />
 
       <main className="container">
-        {/* Intro */}
+
+        {/* Título principal */}
         <section id="inicio" className="intro-section">
           <h1 className="title-dramatico">CiberNaka L2</h1>
           <p>Un mundo donde el caos y la gloria se cruzan en cada batalla.</p>
+        </section>
 
-          <LoreSection />
+        {/* Lore: ¿Qué es Lineage? */}
+        <LoreSection />
 
-          <section id="historia" className="history-section container">
-            <h2>Historia y Características</h2>
-            <div className="history-cards">
-              <article className="history-card">
-                <h3>¿Por qué CiberNaka L2?</h3>
-                <p>
-                  Porque combinamos un ambiente místico, comunidad apasionada y
-                  servidores optimizados para que vivas la mejor experiencia H5.
-                </p>
-              </article>
-            </div>
-          </section>
+        {/* Timeline de crónicas */}
+        <TimelineSection />
 
-          <div className="servers-container">
-            {/* Server Anakim */}
-            <div className="server-card anakim">
-              <h2>Servidor Anakim</h2>
-              <p>Crónica: High Five</p>
-              <p>Modo: Full PvP (por confirmar)</p>
+        {/* Características del server */}
+        <section id="historia" className="history-section container">
+          <h2>Historia y Características</h2>
+          <div className="history-cards">
+            <article className="history-card">
+              <h3>¿Por qué CiberNaka L2?</h3>
               <p>
-                Ideal para los amantes del combate constante y adrenalina pura.
+                Porque combinamos un ambiente místico, comunidad apasionada y
+                servidores optimizados para que vivas la mejor experiencia H5.
               </p>
-            </div>
+            </article>
+          </div>
+        </section>
 
-            {/* Server Lilith */}
-            <div className="server-card lilith">
-              <h2>Servidor Lilith</h2>
-              <p>Crónica: High Five</p>
-              <p>Modo: Multiskills (por confirmar)</p>
-              <p>
-                Perfecto para los que buscan experimentar builds y clases
-                cruzadas.
-              </p>
-            </div>
+        {/* Info de servidores */}
+        <section className="servers-container">
+          <div className="server-card anakim">
+            <h2>Servidor Anakim</h2>
+            <p>Crónica: High Five</p>
+            <p>Modo: Full PvP (por confirmar)</p>
+            <p>
+              Ideal para los amantes del combate constante y adrenalina pura.
+            </p>
+          </div>
+
+          <div className="server-card lilith">
+            <h2>Servidor Lilith</h2>
+            <p>Crónica: High Five</p>
+            <p>Modo: Multiskills (por confirmar)</p>
+            <p>
+              Perfecto para los que buscan experimentar builds y clases
+              cruzadas.
+            </p>
           </div>
         </section>
 
@@ -65,7 +71,6 @@ function App() {
           </p>
 
           <div className="downloads-container">
-            {/* Cliente */}
             <div className="download-card">
               <h3>Cliente H5 Completo</h3>
               <p>Versión High Five – base necesaria para jugar.</p>
@@ -79,7 +84,6 @@ function App() {
               </a>
             </div>
 
-            {/* System */}
             <div className="download-card">
               <h3>System CiberNakaL2</h3>
               <p>
@@ -108,7 +112,6 @@ function App() {
         <p>¡No te pierdas nada de CiberNaka L2!</p>
 
         <div className="social-icons">
-          {/* TikTok */}
           <a
             href="https://tiktok.com/@cibernaka"
             target="_blank"
@@ -119,7 +122,6 @@ function App() {
             <i className="fab fa-tiktok"></i>
           </a>
 
-          {/* YouTube */}
           <a
             href="https://www.youtube.com/channel/UCme01PzQB8nyRc8E8b9QnYQ"
             target="_blank"
@@ -130,7 +132,6 @@ function App() {
             <i className="fab fa-youtube"></i>
           </a>
 
-          {/* Instagram */}
           <a
             href="https://instagram.com/cibernaka"
             target="_blank"
@@ -141,7 +142,6 @@ function App() {
             <i className="fab fa-instagram"></i>
           </a>
 
-          {/* Twitch */}
           <a
             href="https://www.twitch.tv/cibernaka"
             target="_blank"
@@ -152,7 +152,6 @@ function App() {
             <i className="fab fa-twitch"></i>
           </a>
 
-          {/* Kick */}
           <a
             href="https://kick.com/cibernaka"
             target="_blank"
@@ -163,7 +162,6 @@ function App() {
             <i className="fas fa-play-circle"></i>
           </a>
 
-          {/* Facebook */}
           <a
             href="https://www.facebook.com/CiberNakaGames"
             target="_blank"
@@ -174,7 +172,6 @@ function App() {
             <i className="fab fa-facebook-f"></i>
           </a>
 
-          {/* Discord */}
           <a
             href="https://discord.com/users/@cibernaka"
             target="_blank"
@@ -186,6 +183,7 @@ function App() {
           </a>
         </div>
       </section>
+
       <ScrollToTop />
       <Footer />
     </div>
