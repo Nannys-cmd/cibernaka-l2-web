@@ -1,34 +1,23 @@
 // src/components/LoreSection.jsx
 import React from "react";
 
-function LoreSection() {
+const LoreSection = () => {
   return (
-    <section id="historia" className="lore-section">
+    <section className="lore-section" id="lore" data-aos="fade-right">
       <h2>¿Qué es Lineage 2?</h2>
       <p>
-        <strong>Lineage 2</strong> es un MMORPG donde miles de jugadores comparten un
-        mundo de fantasía en tiempo real, combaten, forman clanes y escriben su
-        propia leyenda.
-      </p>
-      <p>
-        A diferencia de otros juegos del género, <strong>no hay bandos preestablecidos</strong>: vos
-        decidís con quién aliarte, a quién enfrentar y si fundar tu propio clan.
-      </p>
-      <p>
-        Empezás creando tu personaje, elegís raza, profesión y estilo de combate.
-        Subís de nivel explorando mazmorras, derrotando monstruos y participando
-        en guerras épicas entre clanes.
+        Lineage 2 es un MMORPG épico ambientado en un mundo de fantasía oscura donde clanes y héroes
+        luchan por el poder, la gloria y la supervivencia. Con batallas PvP intensas, vastos territorios y una comunidad apasionada, es un juego que desafía a los más valientes.
       </p>
 
-      <h3>¿Qué tiene de especial la crónica <em>High Five</em>?</h3>
+      <h3>La historia detrás de CiberNaka L2</h3>
       <p>
-        <strong>Freya High Five</strong> es una de las expansiones más queridas y equilibradas de
-        Lineage 2. Presenta habilidades refinadas, jefes desafiantes, nuevas zonas
-        de leveleo y una jugabilidad fluida que mantiene viva la esencia del juego
-        clásico con una experiencia mejorada.
+        CiberNaka L2 nace como un servidor dedicado a ofrecer la mejor experiencia de High Five,
+        combinando equilibrio, eventos constantes y una comunidad comprometida para que cada jugador
+        sienta la adrenalina de la guerra y la camaradería.
       </p>
     </section>
   );
-}
+};
 
 export default LoreSection;

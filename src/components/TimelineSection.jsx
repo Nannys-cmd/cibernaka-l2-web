@@ -1,35 +1,44 @@
+// src/components/TimelineSection.jsx
 import React from "react";
 
-const events = [
+const timelineEvents = [
   {
-    title: "Chronicle 1: Harbingers of War",
-    description: "El inicio de todo. Se introdujeron asedios de castillos y los clanes tomaron protagonismo.",
+    title: "Chronicle 1 - Interlude",
+    description: "La base inicial del juego con mejoras en PvP y balance.",
   },
   {
-    title: "Chronicle 2: Age of Splendor",
-    description: "Más dungeons, nuevas zonas de caza, y mejoras gráficas que expandieron el mundo.",
+    title: "Chronicle 2 - Gracia",
+    description: "Se añadió el sistema de clanes y nuevas misiones épicas.",
   },
   {
-    title: "Chronicle 3: Rise of Darkness",
-    description: "Nuevas skills, jefes épicos, y la oscuridad empezaba a dominar Aden.",
+    title: "Chronicle 3 - Freya",
+    description: "Nueva crónica con mejorías gráficas y raids memorables.",
   },
   {
-    title: "Chronicle 4: Scions of Destiny",
-    description: "Introducción de subclases, el sistema de nobleza, zonas como Rune y Godard, y el Grand Olympiad. Una crónica que marcó un antes y un después.",
+    title: "Chronicle 4 - Chaotic Throne (C4)",
+    description:
+      "Introducción de nuevas habilidades, mazmorras y sistemas de clan avanzados.",
   },
   {
-    title: "High Five",
-    description: "Balance de clases, contenido PvP y PvE optimizado, y la base para muchos servidores privados actuales.",
+    title: "Chronicle 5 - High Five",
+    description:
+      "La crónica más popular, con eventos PvP intensos y múltiples clases jugables.",
   },
 ];
 
-function TimelineSection() {
+const TimelineSection = () => {
   return (
     <section className="timeline-section" id="timeline">
-      <h2>Crónicas del Lineage 2</h2>
+      <h2>Crónicas de Lineage 2</h2>
       <div className="timeline">
-        {events.map((event, index) => (
-          <div key={index} className={`timeline-item ${event.title.includes("High Five") ? "highlight" : ""}`}>
+        {timelineEvents.map((event, index) => (
+          <div
+            key={index}
+            className={`timeline-item ${
+              event.title.includes("High Five") ? "highlight" : ""
+            }`}
+            data-aos="fade-up"
+          >
             <h3>{event.title}</h3>
             <p>{event.description}</p>
           </div>
@@ -37,6 +46,6 @@ function TimelineSection() {
       </div>
     </section>
   );
-}
+};
 
 export default TimelineSection;

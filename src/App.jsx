@@ -1,5 +1,5 @@
 // src/App.jsx
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./components/Header";
 import LoreSection from "./components/LoreSection";
 import TimelineSection from "./components/TimelineSection";
@@ -7,8 +7,14 @@ import VotingSection from "./components/VotingSection";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  }, []);
+
   return (
     <div className="overlay-bg">
       <Header />

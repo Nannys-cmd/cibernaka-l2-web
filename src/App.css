@@ -82,29 +82,23 @@ header {
 /* Lore Section */
 .lore-section {
   padding: 3rem 1rem;
-  text-align: center;
-  color: var(--color-texto);
   max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.8;
+  margin: 2rem auto;
+  color: var(--color-texto);
+  text-align: justify;
+  line-height: 1.7;
 }
 
-.lore-section h2 {
+.lore-section h2, .lore-section h3 {
   color: var(--color-principal);
-  font-size: 2rem;
+  font-family: var(--font-titulo);
   margin-bottom: 1rem;
-}
-
-.lore-section h3 {
-  margin-top: 2rem;
-  color: var(--color-principal);
-  font-size: 1.5rem;
+  text-align: center;
 }
 
 .lore-section p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   font-size: 1.1rem;
-  text-align: justify;
 }
 
 .nav-links {
@@ -266,40 +260,29 @@ header {
 }
 
 /* Voting Section */
-.voting-section h2 {
-  margin-bottom: 1rem;
-  color: var(--color-principal);
-}
-
-.voting-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
-
-.vote-btn {
-  background-color: var(--color-boton);
+.voting-section {
+  padding: 3rem 1rem;
+  text-align: center;
   color: var(--color-texto);
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 4px 6px rgba(230, 57, 70, 0.5);
 }
 
-.vote-btn:hover {
-  background-color: var(--color-boton-hover);
-  box-shadow: 0 6px 8px rgba(214, 40, 40, 0.7);
+.voting-section h2 {
+  font-family: var(--font-titulo);
+  color: var(--color-principal);
+  margin-bottom: 0.5rem;
 }
+
+.voting-section p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
 .voting-banners {
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-  margin-top: 2rem;
 }
 
 .vote-img-link img {
@@ -307,13 +290,13 @@ header {
   height: auto;
   border: 2px solid var(--color-principal);
   border-radius: 6px;
+  box-shadow: 0 0 15px rgba(230, 57, 70, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 0 10px rgba(230, 57, 70, 0.2);
 }
 
 .vote-img-link img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(230, 57, 70, 0.5);
+  box-shadow: 0 0 25px rgba(230, 57, 70, 0.8);
 }
 
 /* Redes Sociales */
@@ -421,14 +404,26 @@ header {
 
 /* Footer */
 footer {
-  background-color: #1f1f1f;
-  text-align: center;
-  padding: 1rem 0;
+  background: linear-gradient(to right, rgba(50, 0, 50, 0.7), rgba(20, 0, 20, 0.7));
+  padding: 2rem 1rem;
   color: var(--color-texto-secundario);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  text-align: center;
+  font-family: var(--font-menu);
   border-top: 2px solid var(--color-principal);
-  margin-top: 3rem;
+  box-shadow: 0 0 25px rgba(230, 57, 70, 0.3);
 }
+
+.footer-content p {
+  margin: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.footer-content p:hover {
+  color: var(--color-principal);
+  text-shadow: 0 0 5px var(--color-principal);
+}
+
 
 /* Responsive */
 @media (max-width: 600px) {
