@@ -1,0 +1,84 @@
+/* Header.css */
+
+/* Estilo general del header */
+header {
+  background-color: #1f1f1f;
+  padding: 1rem 0;
+  border-bottom: 2px solid var(--color-principal);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Contenedor para alinear logo y menú */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Logo y texto juntos */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 1.8rem;
+  color: var(--color-principal);
+  cursor: pointer;
+}
+
+/* Imagen del logo */
+.logo-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 15px #ff6600, 0 0 30px #ff3300;
+  animation: glowPulse 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+/* Hover con giro y escalado */
+.logo-img:hover {
+  transform: rotate(-8deg) scale(1.1);
+}
+
+/* Texto del logo con sombra */
+.logo-text {
+  text-shadow: 0 0 8px #ff9966;
+}
+
+/* Animación glow para el logo */
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 10px #ff6600, 0 0 25px #ff3300;
+  }
+  50% {
+    box-shadow: 0 0 20px #ff9933, 0 0 40px #ff5511;
+  }
+}
+
+/* Nav links estilo básico para que lo puedas extender */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: var(--color-texto);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-family: var(--font-menu);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+  color: var(--color-principal);
+}

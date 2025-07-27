@@ -1,0 +1,24 @@
+/* Overlay.css */
+.overlay-bg {
+  background-image: url('/src/assets/fondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.overlay-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* oscurece el fondo para mejorar el contraste */
+  z-index: 0;
+}
+
+.overlay-bg > * {
+  position: relative;
+  z-index: 1;
+}

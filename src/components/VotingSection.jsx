@@ -1,6 +1,7 @@
 // src/components/VotingSection.jsx
 import React from "react";
 import { motion } from "framer-motion";
+import "../styles/VotingSection.css"; // Assuming you have a CSS file for styling the voting section
 
 const VotingSection = () => {
   return (

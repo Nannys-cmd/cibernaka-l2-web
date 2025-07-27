@@ -1,5 +1,6 @@
 // src/components/TimelineSection.jsx
 import React from "react";
+import "../styles/TimelineSection.css"; // Assuming you have a CSS file for styling the timeline section
 
 const timelineEvents = [
   {

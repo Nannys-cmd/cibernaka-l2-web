@@ -1,6 +1,7 @@
 // src/components/Footer.jsx
 import React from "react";
 import { motion } from "framer-motion";
+import "../styles/Footer.css"; // Assuming you have a CSS file for styling the footer 
 
 const Footer = () => {
   return (

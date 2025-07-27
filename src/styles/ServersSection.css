@@ -1,0 +1,58 @@
+/* ServersSection.css */
+
+.servers-section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.section-title {
+  font-family: var(--font-titulo);
+  font-size: 2.5rem;
+  color: var(--color-principal);
+  margin-bottom: 2rem;
+  text-shadow: 0 0 8px rgba(230, 57, 70, 0.5);
+}
+
+.servers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.server-box {
+  padding: 1.8rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(230, 57, 70, 0.3);
+  color: #fff;
+  transition: transform 0.3s ease;
+  border: 2px solid var(--color-principal);
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.server-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(230, 57, 70, 0.6);
+}
+
+.server-box h3 {
+  font-family: var(--font-titulo);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.server-mode {
+  font-style: italic;
+  color: var(--color-texto-secundario);
+  margin-bottom: 1rem;
+}
+
+.server-box ul {
+  padding-left: 1.2rem;
+}
+
+.server-box li {
+  margin-bottom: 0.6rem;
+  list-style: disc;
+}

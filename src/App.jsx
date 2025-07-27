@@ -6,9 +6,12 @@ import TimelineSection from "./components/TimelineSection";
 import VotingSection from "./components/VotingSection";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import StaffSection from "./components/StaffSection";
+import ServersSection from "./components/ServersSection";
 import "./App.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import "./styles/Overlay.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   useEffect(() => {
@@ -20,7 +23,6 @@ function App() {
       <Header />
 
       <main className="container">
-
         {/* Título principal */}
         <section id="inicio" className="intro-section">
           <h1 className="title-dramatico">CiberNaka L2</h1>
@@ -47,27 +49,9 @@ function App() {
           </div>
         </section>
 
-        {/* Info de servidores */}
-        <section className="servers-container">
-          <div className="server-card anakim">
-            <h2>Servidor Anakim</h2>
-            <p>Crónica: High Five</p>
-            <p>Modo: Full PvP (por confirmar)</p>
-            <p>
-              Ideal para los amantes del combate constante y adrenalina pura.
-            </p>
-          </div>
-
-          <div className="server-card lilith">
-            <h2>Servidor Lilith</h2>
-            <p>Crónica: High Five</p>
-            <p>Modo: Multiskills (por confirmar)</p>
-            <p>
-              Perfecto para los que buscan experimentar builds y clases
-              cruzadas.
-            </p>
-          </div>
-        </section>
+        <ServersSection />
+    
+        <StaffSection />
 
         {/* Descargas */}
         <section id="descargas" className="download-section">

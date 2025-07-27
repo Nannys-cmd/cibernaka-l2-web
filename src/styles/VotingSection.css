@@ -1,0 +1,40 @@
+/* VotingSection.css */
+
+.voting-section {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: var(--color-texto);
+}
+
+.voting-section h2 {
+  font-family: var(--font-titulo);
+  color: var(--color-principal);
+  margin-bottom: 0.5rem;
+}
+
+.voting-section p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.voting-banners {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.vote-img-link img {
+  width: 140px;
+  height: auto;
+  border: 2px solid var(--color-principal);
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(230, 57, 70, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vote-img-link img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(230, 57, 70, 0.8);
+}

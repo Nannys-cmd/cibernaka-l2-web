@@ -1,0 +1,25 @@
+/* Footer.css */
+
+/* Contenedor general del footer */
+footer {
+  background: linear-gradient(to right, rgba(50, 0, 50, 0.7), rgba(20, 0, 20, 0.7));
+  padding: 2rem 1rem;
+  color: var(--color-texto-secundario);
+  font-size: 0.95rem;
+  text-align: center;
+  font-family: var(--font-menu);
+  border-top: 2px solid var(--color-principal);
+  box-shadow: 0 0 25px rgba(230, 57, 70, 0.3);
+}
+
+/* Contenido interno del footer */
+.footer-content p {
+  margin: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+/* Efecto hover en los textos */
+.footer-content p:hover {
+  color: var(--color-principal);
+  text-shadow: 0 0 5px var(--color-principal);
+}

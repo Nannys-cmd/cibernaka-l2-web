@@ -1,0 +1,60 @@
+/* StaffSection.css */
+
+.staff-section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.staff-title {
+  font-family: var(--font-titulo);
+  font-size: 2.5rem;
+  color: var(--color-principal);
+  text-shadow: 0 0 8px rgba(255, 100, 100, 0.6);
+  margin-bottom: 2rem;
+}
+
+.staff-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.staff-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--color-principal);
+  border-radius: 12px;
+  width: 280px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(230, 57, 70, 0.2);
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.staff-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(230, 57, 70, 0.6);
+}
+
+.staff-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2px solid var(--color-principal);
+  box-shadow: 0 0 10px var(--color-principal);
+}
+
+.staff-nick {
+  font-style: italic;
+  color: var(--color-texto-secundario);
+  margin-bottom: 0.3rem;
+}
+
+.staff-desc {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--color-texto);
+}

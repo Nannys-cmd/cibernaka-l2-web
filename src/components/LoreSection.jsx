@@ -1,5 +1,6 @@
 // src/components/LoreSection.jsx
 import React from "react";
+import "../styles/LoreSection.css"; // Assuming you have a CSS file for styling the lore section
 
 const LoreSection = () => {
   return (
