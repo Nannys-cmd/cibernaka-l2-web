@@ -21,6 +21,7 @@ Sitio web oficial del servidor **Cibernaka L2**, desarrollado con React y Vite p
    git clone <https://github.com/nannys-cmd/cibernaka-l2-web.git>
 
 2. Instalar dependencias
+   
 cd cibernaka-l2-web
 npm install
 
@@ -31,29 +32,24 @@ npm run dev
 Por defecto se abrirá en [http://localhost:5173](http://localhost:5173)
 
 📦 Scripts disponibles
-npm run dev — Ejecuta la app en modo desarrollo con recarga en caliente
+- npm run dev — Ejecuta la app en modo desarrollo con recarga en caliente
 
-npm run build — Genera los archivos para producción optimizados
+- npm run build — Genera los archivos para producción optimizados
 
-npm run preview — Previsualiza la build de producción localmente
+- npm run preview — Previsualiza la build de producción localmente
 
-npm run lint — Ejecuta ESLint para verificar el código
+- npm run lint — Ejecuta ESLint para verificar el código
 
 📁 Estructura del proyecto
-/src — Código fuente React
+- /src — Código fuente React
 
-/public — Archivos estáticos
+- /public — Archivos estáticos
 
-/src/components — Componentes React
+- /src/components — Componentes React
 
-/src/styles — Estilos CSS
+- /src/styles — Estilos CSS
 
-vite.config.js — Configuración de Vite
-
-🤝 Cómo contribuir
-¡Contribuciones son bienvenidas!
-Si querés ayudar, hacé un fork del proyecto, creá una rama con tu feature, y hacé un pull request.
-Por favor, respetá las reglas de estilo y ejecutá npm run lint antes de enviar cambios.
+- vite.config.js — Configuración de Vite
 
 📝 Licencia
 Este proyecto está bajo licencia MIT.
