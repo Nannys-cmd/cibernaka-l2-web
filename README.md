@@ -1,16 +1,17 @@
-<<<<<<< HEAD
-# React + Vite
+# Cibernaka L2 Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web oficial del servidor Cibernaka L2, construido con React y Vite.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Aquí podrás encontrar toda la información sobre los servidores, descargas y novedades.
 
-## Expanding the ESLint configuration
+## Cómo contribuir
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# cibernaka-l2-web
->>>>>>> c2c983b8797227834e84544e3fdfedb1453a7e15
+- Clonar el repositorio
+- Ejecutar `npm install`
+- Ejecutar `npm run dev` para desarrollo local
+
+## Licencia
+
+MIT License
