@@ -1,7 +1,7 @@
 // src/components/ServersSection.jsx
 import React from "react";
 import { motion } from "framer-motion";
-import "../styles/ServersSection.css"; // Assuming you have a CSS file for styling the servers section
+import "../styles/ServersSection.css";
 
 const servers = [
   {
@@ -12,7 +12,7 @@ const servers = [
       "Zona de leveleo 80+",
       "Fantasy Island: Special Shop para mejoras",
     ],
-    bgColor: "#a62457",
+    bgColor: "#1a1a1a",
   },
   {
     name: "Lilith",
@@ -23,7 +23,7 @@ const servers = [
       "Zonas especiales: Infinity Dock, Destruction Dock, Annihilation Dock",
       "NPC Rewards por logros",
     ],
-    bgColor: "#511f69",
+    bgColor: "#1a1a1a",
   },
   {
     name: "Desperion",
@@ -44,7 +44,7 @@ const ServersSection = () => {
       <div className="servers-grid">
         {servers.map((server, index) => (
           <motion.div
-            className="server-box"
+            className="tarjeta-cibernaka"
             key={index}
             style={{ backgroundColor: server.bgColor }}
             initial={{ opacity: 0, y: 40 }}
