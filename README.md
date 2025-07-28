@@ -22,14 +22,15 @@ Sitio web oficial del servidor **Cibernaka L2**, desarrollado con React y Vite p
 
 2. Instalar dependencias
    
-cd cibernaka-l2-web
-npm install
+   cd cibernaka-l2-web
+   npm install
 
 3. Levantar servidor de desarrollo
-npm run dev
+   
+   npm run dev
 
 4. Abrir en el navegador
-Por defecto se abrirá en [http://localhost:5173](http://localhost:5173)
+   Por defecto se abrirá en [http://localhost:5173](http://localhost:5173)
 
 📦 Scripts disponibles
 - npm run dev — Ejecuta la app en modo desarrollo con recarga en caliente
