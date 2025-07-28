@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import StaffSection from "./components/StaffSection";
 import ServersSection from "./components/ServersSection";
+import StatusBar from "./components/StatusBar";
 import "./App.css";
 import "./styles/Overlay.css";
 import AOS from "aos";
@@ -21,6 +22,8 @@ function App() {
   return (
     <div className="overlay-bg">
       <Header />
+
+      <StatusBar />
 
       <main className="container">
         {/* Título principal */}
@@ -50,7 +53,7 @@ function App() {
         </section>
 
         <ServersSection />
-    
+
         <StaffSection />
 
         {/* Descargas */}
