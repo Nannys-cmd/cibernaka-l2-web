@@ -6,7 +6,7 @@ const StatusBar = () => {
   const [statusHTML, setStatusHTML] = useState("Cargando estado...");
 
   useEffect(() => {
-    fetch("/api/status", {
+    fetch("https://cibernaka-status.onrender.com/status.php", {
 
       headers: {
         "ngrok-skip-browser-warning": "true",
