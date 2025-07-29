@@ -10,7 +10,7 @@ const staffData = [
     nickname: "Masters (en juego)",
     description:
       "El guardián del equilibrio en CiberNaka L2. Admin de ambos servidores, organizador de eventos, y mentor de cada batalla épica.",
-    image: "/src/assets/gm-naka.jpg", // podés reemplazar con cualquier avatar o ilustración
+    image: "gm-naka.jpg", // podés reemplazar con cualquier avatar o ilustración
   },
   {
     name: "Daniela",
@@ -18,7 +18,7 @@ const staffData = [
     nickname: "Gilraen / Nannys",
     description:
       "Diseñadora del sitio, gestora de contenido, y soporte fiel. Siempre lista para echar una mano... ¡o lanzar un hechizo!",
-    image: "/src/assets/gm-daniela.jpg",
+    image: "gm-daniela.jpg",
   },
 ];
 
