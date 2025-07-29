@@ -67,7 +67,3 @@ Email: <ciber.naka@gmail.com>
 Proyecto desarrollado con 💜 por Daniela Bastias y equipo Cibernaka L2
 
 ---
-
-Te recomiendo adaptar el enlace del repositorio y el mail a los tuyos, y si querés agregar más secciones (como screenshots, FAQ, etc), te ayudo sin drama.
-
-¿Querés que te arme el README.md con algún detalle extra? ¿O te mando un script para automatizar creación?
