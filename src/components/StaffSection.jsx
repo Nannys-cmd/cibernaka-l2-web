@@ -13,7 +13,7 @@ const staffData = [
     image: "gm-naka.jpg", // podés reemplazar con cualquier avatar o ilustración
   },
   {
-    name: "Daniela",
+    name: "Nannys",
     role: "Diseñadora, Soporte y Community Manager",
     nickname: "Gilraen / Nannys",
     description:
