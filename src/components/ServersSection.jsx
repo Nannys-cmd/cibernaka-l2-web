@@ -32,6 +32,7 @@ const servers = [
       "Inicio desde nivel 1",
       "Requiere contraseña de 6-8 números",
       "Modo ultra desafiante para valientes",
+      "Duración de los buffs: 1 hora"
     ],
     bgColor: "#1a1a1a",
   },
