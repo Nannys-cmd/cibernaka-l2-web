@@ -19,9 +19,11 @@ const servers = [
     mode: "Full PvP",
     features: [
       "Inicio al nivel 76 con cambios instantáneos",
-      "Alt + B: GM Shop, GK Global, Event Manager",
-      "Zonas especiales: Infinity Dock, Destruction Dock, Annihilation Dock",
+      "Subclass acumulativa",
+      "NPC Subclass Manager",
+      "NO GM Shop, NO NPC Buffer, NO GK Global",
       "NPC Rewards por logros",
+      "Duración de los buffs: 1 horas",
     ],
     bgColor: "#1a1a1a",
   },

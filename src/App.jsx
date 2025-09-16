@@ -80,11 +80,11 @@ function App() {
             <div className="download-card">
               <h3>System CiberNakaL2</h3>
               <p>
-                Versión actualizada de junio 2025. Extraé en la carpeta del
+                Versión V4 - actualizaCIÓN de septiembre 2025. Extraé en la carpeta del
                 cliente.
               </p>
               <a
-                href="https://www.mediafire.com/file/ps2om1dyvab6fb8/CiberNaka_L2_Server_%2528V3%2529_01-06-2025.rar/file"
+                href="https://www.mediafire.com/file/44u3mx0nbwapny0/CiberNaka+L2+Parche+(V4)+15-09-2025.rar/file"
                 className="btn download-btn"
                 target="_blank"
                 rel="noopener noreferrer"
