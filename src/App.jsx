@@ -80,7 +80,7 @@ function App() {
             <div className="download-card">
               <h3>System CiberNakaL2</h3>
               <p>
-                Versión V4 - actualizaCIÓN de septiembre 2025. Extraé en la carpeta del
+                Versión V4 - actualización de Septiembre 2025. Extraé en la carpeta del
                 cliente.
               </p>
               <a
