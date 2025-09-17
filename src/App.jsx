@@ -9,6 +9,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import StaffSection from "./components/StaffSection";
 import ServersSection from "./components/ServersSection";
 import StatusBar from "./components/StatusBar";
+import TutorialVideo from "./components/TutorialVideo"; // ⬅️ Nuevo tutorial
 import "./App.css";
 import "./styles/Overlay.css";
 import AOS from "aos";
@@ -55,6 +56,8 @@ function App() {
         <ServersSection />
 
         <StaffSection />
+
+        <TutorialVideo />   {/* ⬅️ Nuevo tutorial */}
 
         {/* Descargas */}
         <section id="descargas" className="download-section">
