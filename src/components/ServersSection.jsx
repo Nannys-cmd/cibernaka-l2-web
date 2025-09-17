@@ -18,8 +18,7 @@ const servers = [
     name: "Lilith",
     mode: "Full PvP",
     features: [
-      "Inicio al nivel 76 con cambios instantáneos",
-      "Subclass acumulativa",
+      "Subclass acumulativa x5",
       "NPC Subclass Manager",
       "NO GM Shop, NO NPC Buffer, NO GK Global",
       "NPC Rewards por logros",
