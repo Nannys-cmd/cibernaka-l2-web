@@ -16,12 +16,10 @@ const servers = [
   },
   {
     name: "Lilith",
-    mode: "Full PvP",
+    mode: "x5 Subclass Acumulativas",
     features: [
-      "Subclass acumulativa x5",
       "NPC Subclass Manager",
       "NO GM Shop, NO NPC Buffer, NO GK Global",
-      "NPC Rewards por logros",
       "Duración de los buffs: 1 horas",
     ],
     bgColor: "#1a1a1a",
