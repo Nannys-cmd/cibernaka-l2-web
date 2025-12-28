@@ -10,6 +10,7 @@ import StaffSection from "./components/StaffSection";
 import ServersSection from "./components/ServersSection";
 import StatusBar from "./components/StatusBar";
 import TutorialVideo from "./components/TutorialVideo"; // ⬅️ Nuevo tutorial
+import Navigation from "./components/Navigation";
 import "./App.css";
 import "./styles/Overlay.css";
 import AOS from "aos";
@@ -22,8 +23,9 @@ function App() {
 
   return (
     <div className="overlay-bg">
+      <Navigation />
       <Header />
-
+      
       <StatusBar />
 
       <main className="container">
