@@ -25,14 +25,35 @@ function App() {
     <div className="overlay-bg">
       <Navigation />
       <Header />
-      
+
       <StatusBar />
 
       <main className="container">
         {/* Título principal */}
         <section id="inicio" className="intro-section">
-          <h1 className="title-dramatico">CiberNaka L2</h1>
-          <p>Un mundo donde el caos y la gloria se cruzan en cada batalla.</p>
+          <div className="launch-banner">
+            <span className="launch-badge">🔥 REAPERTURA OFICIAL 🔥</span>
+
+            <h1 className="title-dramatico">CiberNaka L2</h1>
+
+            <h2 className="launch-date">
+              ⚔️ SÁBADO 13 DE JUNIO - REAPERTURA OFICIAL ⚔️
+            </h2>
+
+            <p className="launch-description">
+              Dos nuevas experiencias te esperan:
+            </p>
+
+            <div className="launch-servers">
+              <span>🔥 Multiskills x1</span>
+              <span>☠️ HardCore x1</span>
+            </div>
+
+            <p className="launch-rules">
+              Sin GM Shop • Sin GK Global • Skills originales •
+              Progreso basado en esfuerzo y trabajo en equipo
+            </p>
+          </div>
         </section>
 
         {/* Lore: ¿Qué es Lineage? */}

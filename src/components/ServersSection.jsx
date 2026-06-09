@@ -5,33 +5,32 @@ import "../styles/ServersSection.css";
 
 const servers = [
   {
-    name: "Anakim",
-    mode: "Multiskills",
+    name: "Multiskills",
+    mode: "x1",
     features: [
-      "Alt + B: Buffs, Shop y Community Manager",
-      "Zona de leveleo 80+",
-      "Fantasy Island: Special Shop para mejoras",
+      "Sistema Multiskills",
+      "Aprendé skills de cualquier profesión",
+      "Rates x1",
+      "Venta de buffs mediante personajes",
+      "Sin GM Shop",
+      "Sin GK Global",
+      "Duración original de las skills",
+      "Experiencia enfocada en progreso y comunidad",
     ],
     bgColor: "#1a1a1a",
   },
   {
-    name: "Lilith",
-    mode: "x5 Subclass Acumulativas",
+    name: "HardCore",
+    mode: "x1",
     features: [
-      "NPC Subclass Manager",
-      "NO GM Shop, NO NPC Buffer, NO GK Global",
-      "Duración de los buffs: 1 horas",
-    ],
-    bgColor: "#1a1a1a",
-  },
-  {
-    name: "Desperion",
-    mode: "x1 Hardcore",
-    features: [
+      "Experiencia clásica High Five",
       "Inicio desde nivel 1",
-      "Requiere contraseña de 6-8 números",
-      "Modo ultra desafiante para valientes",
-      "Duración de los buffs: 1 hora"
+      "Rates x1",
+      "Venta de buffs mediante personajes",
+      "Sin GM Shop",
+      "Sin GK Global",
+      "Duración original de las skills",
+      "Desafío para jugadores que buscan una experiencia auténtica",
     ],
     bgColor: "#1a1a1a",
   },
@@ -40,7 +39,10 @@ const servers = [
 const ServersSection = () => {
   return (
     <section id="servers" className="servers-section container">
-      <h2 className="section-title">Nuestros Servidores</h2>
+      <h2 className="section-title">
+        ⚔️ Elegí Tu Destino ⚔️
+      </h2>
+
       <div className="servers-grid">
         {servers.map((server, index) => (
           <motion.div
@@ -53,7 +55,11 @@ const ServersSection = () => {
             viewport={{ once: true }}
           >
             <h3>{server.name}</h3>
-            <p className="server-mode">{server.mode}</p>
+
+            <p className="server-mode">
+              Servidor {server.mode}
+            </p>
+
             <ul>
               {server.features.map((feature, idx) => (
                 <li key={idx}>{feature}</li>
