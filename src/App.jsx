@@ -37,7 +37,7 @@ function App() {
             <h1 className="title-dramatico">CiberNaka L2</h1>
 
             <h2 className="launch-date">
-              ⚔️ SÁBADO 13 DE JUNIO - REAPERTURA OFICIAL ⚔️
+              🔥 SERVIDORES ONLINE 🔥
             </h2>
 
             <p className="launch-description">
@@ -78,6 +78,55 @@ function App() {
 
         <ServersSection />
 
+        {/* VIP */}
+        <section id="vip" className="vip-section">
+          <h2>💎 Membresía VIP 💎</h2>
+
+          <p className="vip-description">
+            Ayudá a mantener CiberNaka L2 activo y obtené acceso a los beneficios VIP.
+          </p>
+
+          <div className="vip-cards">
+            <div className="vip-card">
+              <h3>VIP Mensual</h3>
+              <p className="vip-price">$2.000</p>
+              <p>30 días de membresía VIP</p>
+            </div>
+
+            <div className="vip-card featured">
+              <h3>VIP Trimestral</h3>
+              <p className="vip-price">$5.000</p>
+              <p>90 días de membresía VIP</p>
+              <span className="vip-save">⭐ Mejor opción</span>
+            </div>
+          </div>
+
+          <div className="vip-payment">
+            <h3>📌 Cómo adquirir tu VIP</h3>
+
+            <p>Realizá tu pago al siguiente alias:</p>
+
+            <div className="vip-alias">
+              ciber.naka
+            </div>
+
+            <p>Luego enviá un correo a:</p>
+
+            <div className="vip-mail">
+              ciber.naka@outlook.com
+            </div>
+
+            <p>Indicando:</p>
+
+            <ul>
+              <li>Nombre de la cuenta</li>
+              <li>Comprobante de pago</li>
+              <li>Plan contratado (1 o 3 meses)</li>
+            </ul>
+          </div>
+        </section>
+
+
         <StaffSection />
 
         <TutorialVideo />   {/* ⬅️ Nuevo tutorial */}
@@ -91,31 +140,20 @@ function App() {
 
           <div className="downloads-container">
             <div className="download-card">
-              <h3>Cliente H5 Completo</h3>
-              <p>Versión High Five – base necesaria para jugar.</p>
-              <a
-                href="https://www.mediafire.com/file/e6d0bab482r1q4j/Client_L2_H5.rar/file"
-                className="btn download-btn"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Descargar Cliente
-              </a>
-            </div>
+              <h3>⚔️ Cliente Completo CiberNaka L2 H5</h3>
 
-            <div className="download-card">
-              <h3>System CiberNakaL2</h3>
               <p>
-                Versión V4 - actualización de Septiembre 2025. Extraé en la carpeta del
-                cliente.
+                Descargá el cliente completo listo para jugar en nuestros servidores.
+                No necesitás descargar ningún parche o system adicional.
               </p>
+
               <a
-                href="https://www.mediafire.com/file/44u3mx0nbwapny0/CiberNaka+L2+Parche+(V4)+15-09-2025.rar/file"
+                href="https://www.mediafire.com/file/tf14b0qv5gftlx1/Ciber+Naka+L2+H5.rar/file"
                 className="btn download-btn"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Descargar System
+                Descargar Cliente Completo
               </a>
             </div>
           </div>
