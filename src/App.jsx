@@ -80,7 +80,7 @@ function App() {
 
         {/* VIP */}
         <section id="vip" className="vip-section">
-          <h2>💎 Membresía VIP 💎</h2>
+          <h2>💎 Membresía Premium 💎</h2>
 
           <p className="vip-description">
             Ayudá a mantener CiberNaka L2 activo y obtené beneficios exclusivos para acelerar tu progreso.
@@ -88,21 +88,21 @@ function App() {
 
           <div className="vip-cards">
             <div className="vip-card">
-              <h3>VIP Mensual</h3>
+              <h3>Premium Mensual</h3>
               <p className="vip-price">$2.000</p>
-              <p>30 días de membresía VIP</p>
+              <p>30 días de membresía Premium</p>
             </div>
 
             <div className="vip-card featured">
-              <h3>VIP Trimestral</h3>
+              <h3>Premium Trimestral</h3>
               <p className="vip-price">$5.000</p>
-              <p>90 días de membresía VIP</p>
+              <p>90 días de membresía Premium</p>
               <span className="vip-save">⭐ Mejor opción</span>
             </div>
           </div>
 
           <div className="vip-payment">
-            <h3>🔥 Beneficios VIP</h3>
+            <h3>🔥 Beneficios Premium</h3>
 
             <ul>
               <li>⚔️ Experiencia x2.5</li>
@@ -115,7 +115,7 @@ function App() {
 
             <br />
 
-            <h3>📌 Cómo adquirir tu VIP</h3>
+            <h3>📌 Cómo adquirir tu Premium</h3>
 
             <p>Realizá tu pago al siguiente alias:</p>
 
@@ -138,7 +138,7 @@ function App() {
             </ul>
 
             <p className="vip-note">
-              * Los beneficios VIP se aplican al personaje asociado a la cuenta registrada.
+              * Los beneficios Premium se aplican a todos los personajes asociados a la cuenta registrada.
             </p>
           </div>
         </section>
