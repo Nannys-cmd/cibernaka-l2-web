@@ -5,7 +5,7 @@ import "../styles/ServersSection.css";
 
 const servers = [
   {
-    name: "Multiskills",
+    name: "Lilith - Multiskills",
     mode: "x1",
     features: [
       "Sistema Multiskills",
@@ -20,7 +20,7 @@ const servers = [
     bgColor: "#1a1a1a",
   },
   {
-    name: "HardCore",
+    name: "Anakim - HardCore",
     mode: "x1",
     features: [
       "Experiencia clásica High Five",

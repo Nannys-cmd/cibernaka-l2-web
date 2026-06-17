@@ -108,7 +108,8 @@ function App() {
               <li>⚔️ Experiencia x2.5</li>
               <li>💰 Adena x2.5</li>
               <li>🎁 Drop x2.5</li>
-              <li>🪙 Spoil x2.5</li>
+              <li>💥 Spoil x2.5</li>
+              <li>🚀 Progreso acelerado para jugadores activos</li>
               <li>⭐ Más progreso sin perder la esencia del servidor</li>
             </ul>
 
@@ -136,12 +137,11 @@ function App() {
               <li>Plan contratado (1 o 3 meses)</li>
             </ul>
 
-            <p style={{ marginTop: "1rem", fontSize: "0.9rem", opacity: "0.8" }}>
+            <p className="vip-note">
               * Los beneficios VIP se aplican al personaje asociado a la cuenta registrada.
             </p>
           </div>
         </section>
-
 
         <StaffSection />
 
