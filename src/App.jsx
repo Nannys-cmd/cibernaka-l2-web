@@ -83,7 +83,7 @@ function App() {
           <h2>💎 Membresía VIP 💎</h2>
 
           <p className="vip-description">
-            Ayudá a mantener CiberNaka L2 activo y obtené acceso a los beneficios VIP.
+            Ayudá a mantener CiberNaka L2 activo y obtené beneficios exclusivos para acelerar tu progreso.
           </p>
 
           <div className="vip-cards">
@@ -102,6 +102,18 @@ function App() {
           </div>
 
           <div className="vip-payment">
+            <h3>🔥 Beneficios VIP</h3>
+
+            <ul>
+              <li>⚔️ Experiencia x2.5</li>
+              <li>💰 Adena x2.5</li>
+              <li>🎁 Drop x2.5</li>
+              <li>🪙 Spoil x2.5</li>
+              <li>⭐ Más progreso sin perder la esencia del servidor</li>
+            </ul>
+
+            <br />
+
             <h3>📌 Cómo adquirir tu VIP</h3>
 
             <p>Realizá tu pago al siguiente alias:</p>
@@ -123,6 +135,10 @@ function App() {
               <li>Comprobante de pago</li>
               <li>Plan contratado (1 o 3 meses)</li>
             </ul>
+
+            <p style={{ marginTop: "1rem", fontSize: "0.9rem", opacity: "0.8" }}>
+              * Los beneficios VIP se aplican al personaje asociado a la cuenta registrada.
+            </p>
           </div>
         </section>
 
