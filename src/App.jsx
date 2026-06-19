@@ -117,6 +117,9 @@ function App() {
               📜 Verificá tu estado Premium con el comando:
               <br />
               <strong>.premium</strong>
+              <p>
+                Mostrará el tiempo restante de tu membresía y los beneficios activos.
+              </p>
             </div>
 
             <br />

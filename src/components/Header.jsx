@@ -17,6 +17,9 @@ function Header() {
               <a href="#inicio">Inicio</a>
             </li>
             <li>
+              <a href="#vip">Premium</a>
+            </li>
+            <li>
               <a href="#descargas">Descargas</a>
             </li>
             <li>
