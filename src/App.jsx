@@ -113,6 +113,12 @@ function App() {
               <li>⭐ Más progreso sin perder la esencia del servidor</li>
             </ul>
 
+            <div className="vip-command">
+              📜 Verificá tu estado Premium con el comando:
+              <br />
+              <strong>.premium</strong>
+            </div>
+
             <br />
 
             <h3>📌 Cómo adquirir tu Premium</h3>

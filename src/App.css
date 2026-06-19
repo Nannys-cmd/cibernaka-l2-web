@@ -346,6 +346,20 @@ h1, h2, h3 {
   font-size: 1.05rem;
 }
 
+.vip-command {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.vip-command strong {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #ffd700;
+  font-size: 1.4rem;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.7);
+}
+
 .vip-payment {
   max-width: 700px;
   margin: 0 auto;
