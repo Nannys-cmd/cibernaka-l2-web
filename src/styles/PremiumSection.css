@@ -1,0 +1,295 @@
+/* ==========================
+   VIP SECTION
+========================== */
+
+.vip-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.vip-section h2 {
+  font-family: var(--font-titulo);
+  font-size: 2.8rem;
+  color: #ffd700;
+  margin-bottom: 1rem;
+  animation: vipGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes vipGlow {
+  from {
+    text-shadow:
+      0 0 10px rgba(255, 215, 0, 0.6),
+      0 0 20px rgba(255, 215, 0, 0.4);
+  }
+
+  to {
+    text-shadow:
+      0 0 15px rgba(255, 215, 0, 0.9),
+      0 0 30px rgba(255, 215, 0, 0.7);
+  }
+}
+
+.vip-description {
+  color: var(--color-texto);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+/* ==========================
+   CARDS
+========================== */
+
+.vip-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.vip-card {
+  width: 280px;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid #ffd700;
+  background: rgba(0, 0, 0, 0.75);
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.25);
+}
+
+.vip-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 0 20px rgba(255, 215, 0, 0.4),
+    0 0 30px rgba(255, 215, 0, 0.25);
+}
+
+.vip-card h3 {
+  color: #ffd700;
+  margin-bottom: 1rem;
+}
+
+.vip-price {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.4rem;
+}
+
+.vip-price span {
+  font-size: 1rem;
+  color: #ffd700;
+}
+
+.vip-usd {
+  color: #7fffd4;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.featured {
+  border-color: #ffae00;
+}
+
+.vip-save {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+/* ==========================
+   PANEL PRINCIPAL
+========================== */
+
+.vip-payment {
+  max-width: 700px;
+  margin: 0 auto;
+
+  padding: 2rem;
+
+  border-radius: 12px;
+
+  background: rgba(0, 0, 0, 0.8);
+
+  border: 1px solid rgba(255, 215, 0, 0.4);
+
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.15);
+}
+
+.vip-payment h3 {
+  color: #ffd700;
+  margin-bottom: 1rem;
+}
+
+.vip-payment ul {
+  text-align: left;
+  display: inline-block;
+}
+
+.vip-payment li {
+  margin-bottom: 0.8rem;
+}
+
+/* ==========================
+   COMANDO
+========================== */
+
+.vip-command {
+  margin: 2rem auto;
+
+  padding: 1rem;
+
+  max-width: 500px;
+
+  border-radius: 8px;
+
+  background: rgba(255, 215, 0, 0.05);
+
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.vip-command strong {
+  display: block;
+
+  margin-top: 0.5rem;
+
+  color: #ffd700;
+
+  font-size: 1.6rem;
+
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+/* ==========================
+   ALIAS Y EMAIL
+========================== */
+
+.vip-alias,
+.vip-mail {
+  max-width: 400px;
+
+  margin: 1rem auto;
+
+  padding: 12px;
+
+  border-radius: 8px;
+
+  border: 1px solid #ffd700;
+
+  background: rgba(255, 215, 0, 0.1);
+
+  color: #ffd700;
+
+  font-weight: bold;
+
+  font-size: 1.3rem;
+
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+}
+
+/* ==========================
+   PAYPAL
+========================== */
+
+.paypal-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  max-width: 500px;
+  margin: 1.5rem auto;
+}
+
+.paypal-btn {
+  display: block;
+
+  text-decoration: none;
+
+  padding: 16px;
+
+  border-radius: 8px;
+
+  border: 1px solid #ffd700;
+
+  background: rgba(255, 215, 0, 0.08);
+
+  color: #ffd700;
+
+  transition: all 0.3s ease;
+}
+
+.paypal-btn:hover {
+  transform: translateY(-3px);
+
+  background: rgba(255, 215, 0, 0.15);
+
+  color: white;
+
+  box-shadow:
+    0 0 15px rgba(255, 215, 0, 0.5),
+    0 0 25px rgba(255, 215, 0, 0.3);
+}
+
+.paypal-price {
+  display: block;
+
+  margin-top: 0.5rem;
+
+  color: white;
+
+  font-size: 1.5rem;
+
+  font-weight: bold;
+}
+
+/* ==========================
+   NOTA
+========================== */
+
+.vip-note {
+  margin-top: 1.5rem;
+
+  font-size: 0.9rem;
+
+  color: #bbb;
+
+  font-style: italic;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px) {
+  .vip-section h2 {
+    font-size: 2rem;
+  }
+
+  .vip-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vip-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .vip-payment {
+    padding: 1.5rem;
+  }
+
+  .vip-price {
+    font-size: 2.2rem;
+  }
+
+  .paypal-price {
+    font-size: 1.3rem;
+  }
+}

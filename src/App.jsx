@@ -11,6 +11,7 @@ import ServersSection from "./components/ServersSection";
 import StatusBar from "./components/StatusBar";
 import TutorialVideo from "./components/TutorialVideo"; // ⬅️ Nuevo tutorial
 import Navigation from "./components/Navigation";
+import PremiumSection from "./components/PremiumSection"; // ⬅️ Nuevo componente de sección premium
 import "./App.css";
 import "./styles/Overlay.css";
 import AOS from "aos";
@@ -78,79 +79,7 @@ function App() {
 
         <ServersSection />
 
-        {/* VIP */}
-        <section id="vip" className="vip-section">
-          <h2>💎 Membresía Premium 💎</h2>
-
-          <p className="vip-description">
-            Ayudá a mantener CiberNaka L2 activo y obtené beneficios exclusivos para acelerar tu progreso.
-          </p>
-
-          <div className="vip-cards">
-            <div className="vip-card">
-              <h3>Premium Mensual</h3>
-              <p className="vip-price">$2.000</p>
-              <p>30 días de membresía Premium</p>
-            </div>
-
-            <div className="vip-card featured">
-              <h3>Premium Trimestral</h3>
-              <p className="vip-price">$5.000</p>
-              <p>90 días de membresía Premium</p>
-              <span className="vip-save">⭐ Mejor opción</span>
-            </div>
-          </div>
-
-          <div className="vip-payment">
-            <h3>🔥 Beneficios Premium</h3>
-
-            <ul>
-              <li>⚔️ Experiencia x2.5</li>
-              <li>💰 Adena x2.5</li>
-              <li>🎁 Drop x2.5</li>
-              <li>💥 Spoil x2.5</li>
-              <li>🚀 Progreso acelerado para jugadores activos</li>
-              <li>⭐ Más progreso sin perder la esencia del servidor</li>
-            </ul>
-
-            <div className="vip-command">
-              📜 Verificá tu estado Premium con el comando:
-              <br />
-              <strong>.premium</strong>
-              <p>
-                Mostrará el tiempo restante de tu membresía y los beneficios activos.
-              </p>
-            </div>
-
-            <br />
-
-            <h3>📌 Cómo adquirir tu Premium</h3>
-
-            <p>Realizá tu pago al siguiente alias:</p>
-
-            <div className="vip-alias">
-              ciber.naka
-            </div>
-
-            <p>Luego enviá un correo a:</p>
-
-            <div className="vip-mail">
-              ciber.naka@outlook.com
-            </div>
-
-            <p>Indicando:</p>
-
-            <ul>
-              <li>Nombre de la cuenta</li>
-              <li>Comprobante de pago</li>
-              <li>Plan contratado (1 o 3 meses)</li>
-            </ul>
-
-            <p className="vip-note">
-              * Los beneficios Premium se aplican a todos los personajes asociados a la cuenta registrada.
-            </p>
-          </div>
-        </section>
+        <PremiumSection />   {/* ⬅️ Nueva sección premium */}
 
         <StaffSection />
 
@@ -190,8 +119,12 @@ function App() {
 
       {/* Redes Sociales */}
       <section id="redes" className="social-section">
-        <h2>Seguinos en nuestras redes</h2>
-        <p>¡No te pierdas nada de CiberNaka L2!</p>
+        <h2>Contacto y Redes Sociales</h2>
+
+        <p>
+          Unite a nuestra comunidad y mantenete al día con eventos,
+          novedades, soporte y anuncios de CiberNaka L2.
+        </p>
 
         <div className="social-icons">
           <a
@@ -264,6 +197,11 @@ function App() {
             <i className="fab fa-discord"></i>
           </a>
         </div>
+
+        <p className="social-discord">
+          🎮 ¿Necesitás ayuda o querés participar en eventos?
+          Contactanos a través de nuestras redes y comunidad.
+        </p>
       </section>
 
       <ScrollToTop />

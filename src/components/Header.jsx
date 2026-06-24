@@ -17,6 +17,9 @@ function Header() {
               <a href="#inicio">Inicio</a>
             </li>
             <li>
+              <a href="#servers">Servidores</a>
+            </li>
+            <li>
               <a href="#vip">Premium</a>
             </li>
             <li>
@@ -26,7 +29,7 @@ function Header() {
               <a href="#votanos">Votá</a>
             </li>
             <li>
-              <a href="#contacto">Contacto</a>
+              <a href="#redes">Contacto</a>
             </li>
           </ul>
         </nav>
