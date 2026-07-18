@@ -188,7 +188,7 @@ function App() {
           </a>
 
           <a
-            href="https://discord.com/users/@cibernaka"
+            href="https://discord.gg/ufkSuBAzM7"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link discord"
