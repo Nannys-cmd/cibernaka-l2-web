@@ -85,32 +85,68 @@ function App() {
 
         <TutorialVideo />   {/* ⬅️ Nuevo tutorial */}
 
+
         {/* Descargas */}
+
         <section id="descargas" className="download-section">
+
           <h2>Descargas</h2>
+
           <p>
-            Todo lo que necesitás para comenzar tu aventura en CiberNaka L2:
+            Descargá el cliente completo listo para jugar.
           </p>
 
           <div className="downloads-container">
+
+            {/* MediaFire */}
+
             <div className="download-card">
-              <h3>⚔️ Cliente Completo CiberNaka L2 H5</h3>
+
+              <h3>
+                ⚔️ Cliente Completo High Five
+              </h3>
 
               <p>
-                Descargá el cliente completo listo para jugar en nuestros servidores.
-                No necesitás descargar ningún parche o system adicional.
+                Incluye todo lo necesario para ingresar al servidor.
               </p>
 
               <a
                 href="https://www.mediafire.com/file/tf14b0qv5gftlx1/Ciber+Naka+L2+H5.rar/file"
-                className="btn download-btn"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="btn download-btn"
               >
-                Descargar Cliente Completo
+                📥 Descargar desde MediaFire
               </a>
+
             </div>
+
+
+            {/* Google Drive */}
+
+            <div className="download-card">
+
+              <h3>
+                ⚔️ Cliente Completo High Five
+              </h3>
+
+              <p>
+                Incluye todo lo necesario para ingresar al servidor.
+              </p>
+
+              <a
+                href="https://drive.google.com/file/d/1E9tp7T_kUa46n6D4roGGw1YM-s40U9XH/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn download-btn"
+              >
+                📥 Descargar desde Google Drive
+              </a>
+
+            </div>
+
           </div>
+
         </section>
 
         {/* Votación */}
