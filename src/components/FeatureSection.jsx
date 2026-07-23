@@ -49,9 +49,9 @@ function FeatureSection() {
     },
     {
       icon: "🔥",
-      title: "Auto Farm",
+      title: "Venta de Buffs",
       text:
-        "Sistema pensado para acompañar tu progreso incluso cuando no podés estar conectado todo el tiempo.",
+        "Usando .sellbuffs podés dejar a tu personaje vendiendo buffs para que otros jugadores puedan adquirirlos.",
     },
     {
       icon: "👑",
