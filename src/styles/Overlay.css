@@ -1,23 +1,50 @@
 /* Overlay.css */
+/* =========================================
+   FONDO GLOBAL
+========================================= */
+
 .overlay-bg {
+  position: relative;
+
+  min-height: 100vh;
+  width: 100%;
+
   background-image: url('/src/assets/fondo.jpg');
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  min-height: 100vh;
-  width: 100%;
+
   overflow-x: hidden;
 }
 
+
+/* =========================================
+   CAPA OSCURA
+========================================= */
+
 .overlay-bg::before {
   content: '';
-  position: absolute;
+
+  position: fixed;
+
   inset: 0;
+
   z-index: 0;
+
+  background: rgba(0, 0, 0, 0.35);
+
+  pointer-events: none;
 }
+
+
+/* =========================================
+   CONTENIDO SOBRE EL FONDO
+========================================= */
 
 .overlay-bg > * {
   position: relative;
+
   z-index: 1;
 }

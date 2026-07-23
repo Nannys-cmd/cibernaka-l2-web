@@ -1,9 +1,17 @@
-/* index.css - reset y variables */
+/* =========================================
+   RESET GLOBAL Y VARIABLES
+========================================= */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
+/* =========================================
+   VARIABLES GLOBALES
+========================================= */
 
 :root {
   --font-titulo: 'Cinzel', serif;
@@ -15,59 +23,62 @@
   --color-secundario: #a8dadc;
   --color-texto: #eee;
   --color-texto-secundario: #bbb;
+
   --color-boton: var(--color-principal);
   --color-boton-hover: #d62828;
 }
 
-body {
-  font-family: var(--font-parrafo);
-  background-color: var(--color-fondo);
-  color: var(--color-texto);
-  line-height: 1.6;
+
+/* =========================================
+   HTML Y BODY
+========================================= */
+
+html {
+  scroll-behavior: smooth;
 }
 
-/* Responsive general */
+
+body {
+  font-family: var(--font-parrafo);
+
+  background-color: var(--color-fondo);
+
+  color: var(--color-texto);
+
+  line-height: 1.6;
+
+  overflow-x: hidden;
+}
+
+
+/* =========================================
+   ENLACES
+========================================= */
+
+a {
+  color: inherit;
+}
+
+
+/* =========================================
+   IMÁGENES
+========================================= */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* =========================================
+   RESPONSIVE GENERAL
+========================================= */
+
 @media (max-width: 768px) {
+
   .container {
     width: 95%;
     padding: 0 1rem;
   }
 
-  .title-dramatico,
-  .typewriter-glow {
-    font-size: 2rem;
-  }
-
-  .servers-grid,
-  .downloads-container,
-  .history-cards,
-  .staff-cards,
-  .voting-banners,
-  .social-icons {
-    grid-template-columns: 1fr !important;
-    flex-direction: column !important;
-    gap: 1.2rem;
-  }
-
-  .server-box,
-  .download-card,
-  .history-card,
-  .staff-card {
-    width: 100% !important;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .header-container {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .scroll-to-top {
-    right: 20px;
-    bottom: 20px;
-  }
 }

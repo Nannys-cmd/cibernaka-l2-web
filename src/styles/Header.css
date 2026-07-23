@@ -1,84 +1,263 @@
-/* Header.css */
+/* =========================================
+   HEADER
+========================================= */
 
-/* Estilo general del header */
-header {
-  background-color: #1f1f1f;
-  padding: 1rem 0;
-  border-bottom: 2px solid var(--color-principal);
+.site-header {
   position: sticky;
+
   top: 0;
+
   z-index: 100;
+
+  width: 100%;
+
+  padding: 0.8rem 0;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(10, 10, 10, 0.97),
+      rgba(25, 5, 5, 0.97),
+      rgba(10, 10, 10, 0.97)
+    );
+
+  border-bottom: 2px solid var(--color-principal);
+
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
-/* Contenedor para alinear logo y menú */
+
+/* =========================================
+   CONTENEDOR
+========================================= */
+
 .header-container {
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
-  max-width: 1100px;
+
+  justify-content: space-between;
+
+  gap: 2rem;
+
+  width: 90%;
+
+  max-width: 1200px;
+
   margin: 0 auto;
-  padding: 0 1rem;
 }
 
-/* Logo y texto juntos */
+
+/* =========================================
+   LOGO
+========================================= */
+
 .logo {
   display: flex;
+
   align-items: center;
-  gap: 0.6rem;
-  font-family: 'MedievalSharp', cursive;
-  font-size: 1.8rem;
-  color: var(--color-principal);
-  cursor: pointer;
+
+  flex-shrink: 0;
+
+  text-decoration: none;
 }
 
-/* Imagen del logo */
 .logo-img {
   width: 60px;
+
   height: 60px;
-  border-radius: 10px;
+
   object-fit: cover;
-  box-shadow: 0 0 15px #ff6600, 0 0 30px #ff3300;
-  animation: glowPulse 3s ease-in-out infinite;
-  transition: transform 0.3s ease;
+
+  border-radius: 10px;
+
+  border: 1px solid rgba(230, 57, 70, 0.5);
+
+  box-shadow:
+    0 0 15px #ff6600,
+    0 0 30px #ff3300;
+
+  animation:
+    glowPulse 3s ease-in-out infinite;
+
+  transition:
+    transform 0.3s ease;
 }
 
-/* Hover con giro y escalado */
 .logo-img:hover {
-  transform: rotate(-8deg) scale(1.1);
+  transform:
+    rotate(-8deg)
+    scale(1.1);
 }
 
-/* Texto del logo con sombra */
-.logo-text {
-  text-shadow: 0 0 8px #ff9966;
-}
 
-/* Animación glow para el logo */
+/* =========================================
+   ANIMACIÓN DEL LOGO
+========================================= */
+
 @keyframes glowPulse {
-  0%, 100% {
-    box-shadow: 0 0 10px #ff6600, 0 0 25px #ff3300;
+
+  0%,
+  100% {
+    box-shadow:
+      0 0 10px #ff6600,
+      0 0 25px #ff3300;
   }
+
   50% {
-    box-shadow: 0 0 20px #ff9933, 0 0 40px #ff5511;
+    box-shadow:
+      0 0 20px #ff9933,
+      0 0 40px #ff5511;
   }
+
 }
 
-/* Nav links estilo básico para que lo puedas extender */
-.nav-links {
-  list-style: none;
+
+/* =========================================
+   NAVEGACIÓN
+========================================= */
+
+.header-navigation {
   display: flex;
-  gap: 1.5rem;
+
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 1.4rem;
+
+  margin: 0;
+
+  padding: 0;
+
+  list-style: none;
 }
 
 .nav-links a {
+  position: relative;
+
   color: var(--color-texto);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
+
   font-family: var(--font-menu);
-  text-transform: uppercase;
+
+  font-size: 0.9rem;
+
+  font-weight: 500;
+
   letter-spacing: 1px;
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+
+  transition:
+    color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -6px;
+
+  width: 0;
+
+  height: 2px;
+
+  background: var(--color-principal);
+
+  box-shadow:
+    0 0 8px var(--color-principal);
+
+  transition:
+    width 0.3s ease;
 }
 
 .nav-links a:hover {
   color: var(--color-principal);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .header-container {
+    gap: 1rem;
+  }
+
+  .nav-links {
+    gap: 0.8rem;
+  }
+
+  .nav-links a {
+    font-size: 0.75rem;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .site-header {
+    padding: 0.6rem 0;
+  }
+
+  .header-container {
+    width: 95%;
+  }
+
+  .logo-img {
+    width: 50px;
+
+    height: 50px;
+  }
+
+  .nav-links {
+    gap: 0.5rem;
+
+    flex-wrap: wrap;
+
+    justify-content: flex-end;
+  }
+
+  .nav-links a {
+    font-size: 0.65rem;
+
+    letter-spacing: 0.5px;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .header-container {
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    max-width: 220px;
+
+    gap: 0.4rem 0.7rem;
+  }
+
+  .nav-links a {
+    font-size: 0.6rem;
+  }
+
 }

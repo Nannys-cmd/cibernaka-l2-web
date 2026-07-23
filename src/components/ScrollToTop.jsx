@@ -1,53 +1,57 @@
 // src/components/ScrollToTop.jsx
-import React, { useState, useEffect } from 'react';
-import '../styles/ScrollToTop.css'; // Assuming you have a CSS file for styling the scroll to top button
+
+import React, { useEffect, useState } from "react";
+import "../styles/ScrollToTop.css";
 
 const ScrollToTop = () => {
   const [visible, setVisible] = useState(false);
 
-  const toggleVisibility = () => {
-    if (window.pageYOffset > 100) {
-      setVisible(true);
-    } else {
-      setVisible(false);
-    }
-  };
+  useEffect(() => {
+    const toggleVisibility = () => {
+      setVisible(window.scrollY > 100);
+    };
+
+    window.addEventListener("scroll", toggleVisibility);
+
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
-  useEffect(() => {
-    window.addEventListener('scroll', toggleVisibility);
-    return () => window.removeEventListener('scroll', toggleVisibility);
-  }, []);
+  if (!visible) {
+    return null;
+  }
 
   return (
-    <>
-      {visible && (
-        <div className="scroll-to-top" onClick={scrollToTop} title="Volver al inicio">
-          {/* SVG de flecha estilo Lineage 2 */}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="48"
-            height="48"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#E63946"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="feather feather-arrow-up"
-          >
-            <line x1="12" y1="19" x2="12" y2="5" />
-            <polyline points="5 12 12 5 19 12" />
-          </svg>
-        </div>
-      )}
-    </>
+    <button
+      className="scroll-to-top"
+      onClick={scrollToTop}
+      title="Volver al inicio"
+      aria-label="Volver al inicio"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="48"
+        height="48"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden="true"
+      >
+        <line x1="12" y1="19" x2="12" y2="5" />
+        <polyline points="5 12 12 5 19 12" />
+      </svg>
+    </button>
   );
 };
 

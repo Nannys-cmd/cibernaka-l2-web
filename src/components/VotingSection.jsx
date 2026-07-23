@@ -1,47 +1,98 @@
 // src/components/VotingSection.jsx
+
 import React from "react";
 import { motion } from "framer-motion";
-import "../styles/VotingSection.css"; // Assuming you have a CSS file for styling the voting section
+import "../styles/VotingSection.css";
 
-const VotingSection = () => {
+const votingSites = [
+  {
+    id: 1,
+    name: "L2Brasil",
+    url: "https://top.l2jbrasil.com/index.php?a=in&u=ciber-naka",
+    image:
+      "https://top.l2jbrasil.com/button.php?u=ciber-naka",
+    alt: "Votar por CiberNaka L2 en L2Brasil",
+  },
+
+  /*
+  Para agregar otro sitio de votación:
+
+  {
+    id: 2,
+    name: "Nombre del Top",
+    url: "https://...",
+    image: "https://...",
+    alt: "Votar por CiberNaka L2 en ...",
+  },
+  */
+];
+
+function VotingSection() {
   return (
-    <section id="votanos" className="voting-section container">
-      <motion.h2
-        initial={{ opacity: 0, y: -40 }}
+    <section
+      id="votanos"
+      className="voting-section container"
+    >
+
+      {/* Encabezado */}
+
+      <motion.div
+        className="voting-header"
+        initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        ¡Votá por CiberNaka L2!
-      </motion.h2>
 
-      <motion.p
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-        Ayudanos a crecer votando diariamente en estos tops:
-      </motion.p>
+        <span className="section-kicker">
+          🏆 APOYÁ AL SERVIDOR 🏆
+        </span>
+
+        <h2>
+          ¡Votá por CiberNaka L2!
+        </h2>
+
+        <p>
+          Ayudanos a crecer votando diariamente en los principales tops
+          de servidores de Lineage 2.
+        </p>
+
+      </motion.div>
+
+
+      {/* Sitios de votación */}
 
       <div className="voting-banners">
-        {/* L2Brasil */}
-        <motion.a
-          href="https://top.l2jbrasil.com/index.php?a=in&u=ciber-naka"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="vote-img-link"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <img
-            src="https://top.l2jbrasil.com/button.php?u=ciber-naka"
-            alt="Vote on L2Brasil"
-          />
-        </motion.a>
+
+        {votingSites.map((site) => (
+
+          <motion.a
+            key={site.id}
+            href={site.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="vote-img-link"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+
+            <img
+              src={site.image}
+              alt={site.alt}
+            />
+
+            <span className="vote-site-name">
+              {site.name}
+            </span>
+
+          </motion.a>
+
+        ))}
+
       </div>
+
     </section>
   );
-};
+}
 
 export default VotingSection;

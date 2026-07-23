@@ -1,174 +1,127 @@
 // src/App.jsx
+
 import React, { useEffect } from "react";
 import Header from "./components/Header";
-import LoreSection from "./components/LoreSection";
-import TimelineSection from "./components/TimelineSection";
-import VotingSection from "./components/VotingSection";
-import Footer from "./components/Footer";
-import ScrollToTop from "./components/ScrollToTop";
-import StaffSection from "./components/StaffSection";
-import ServersSection from "./components/ServersSection";
-import StatusBar from "./components/StatusBar";
-import TutorialVideo from "./components/TutorialVideo"; // ⬅️ Nuevo tutorial
 import Navigation from "./components/Navigation";
-import PremiumSection from "./components/PremiumSection"; // ⬅️ Nuevo componente de sección premium
+import StatusBar from "./components/StatusBar";
+import FeatureSection from "./components/FeatureSection";
+import ServersSection from "./components/ServersSection";
+import PremiumSection from "./components/PremiumSection";
+import TutorialVideo from "./components/TutorialVideo";
+import VotingSection from "./components/VotingSection";
+import StaffSection from "./components/StaffSection";
+import DownloadsSection from "./components/DownloadsSection";
+import ScrollToTop from "./components/ScrollToTop";
+import Footer from "./components/Footer";
+
 import "./App.css";
 import "./styles/Overlay.css";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 function App() {
   useEffect(() => {
-    AOS.init({ duration: 1200 });
+    AOS.init({
+      duration: 1200,
+      once: true,
+    });
   }, []);
 
   return (
     <div className="overlay-bg">
+
       <Navigation />
+
       <Header />
 
       <StatusBar />
 
-      <main className="container">
-        {/* Título principal */}
-        <section id="inicio" className="intro-section">
-          <div className="launch-banner">
-            <span className="launch-badge">🔥 REAPERTURA OFICIAL 🔥</span>
+      <main>
 
-            <h1 className="title-dramatico">CiberNaka L2</h1>
+        {/* Banner Principal */}
+
+        <section id="inicio" className="intro-section">
+
+          <div className="launch-banner">
+
+            <span className="launch-badge">
+              🔥 REAPERTURA OFICIAL 🔥
+            </span>
+
+            <h1 className="title-dramatico">
+              CiberNaka L2
+            </h1>
 
             <h2 className="launch-date">
-              🔥 SERVIDORES ONLINE 🔥
+              SERVIDORES ONLINE
             </h2>
 
             <p className="launch-description">
-              Dos nuevas experiencias te esperan:
+              Dos formas diferentes de vivir Lineage II High Five.
             </p>
 
             <div className="launch-servers">
+
               <span>🔥 Multiskills x1</span>
-              <span>☠️ HardCore x1</span>
+
+              <span>☠️ Hardcore x1</span>
+
             </div>
 
-            <p className="launch-rules">
-              Sin GM Shop • Sin GK Global • Skills originales •
-              Progreso basado en esfuerzo y trabajo en equipo
-            </p>
           </div>
+
         </section>
 
-        {/* Lore: ¿Qué es Lineage? */}
-        <LoreSection />
 
-        {/* Timeline de crónicas */}
-        <TimelineSection />
+        {/* Características */}
 
-        {/* Características del server */}
-        <section id="historia" className="history-section container">
-          <h2>Historia y Características</h2>
-          <div className="history-cards">
-            <article className="history-card">
-              <h3>¿Por qué CiberNaka L2?</h3>
-              <p>
-                Porque combinamos un ambiente místico, comunidad apasionada y
-                servidores optimizados para que vivas la mejor experiencia H5.
-              </p>
-            </article>
-          </div>
-        </section>
+        <FeatureSection />
+
+        {/* Servidores */}
 
         <ServersSection />
 
-        <PremiumSection />   {/* ⬅️ Nueva sección premium */}
+        {/* Premium */}
 
-        <StaffSection />
+        <PremiumSection />
 
-        <TutorialVideo />   {/* ⬅️ Nuevo tutorial */}
+        {/* Tutorial */}
 
+        <TutorialVideo />
 
         {/* Descargas */}
 
-        <section id="descargas" className="download-section">
-
-          <h2>Descargas</h2>
-
-          <p>
-            Descargá el cliente completo listo para jugar.
-          </p>
-
-          <div className="downloads-container">
-
-            {/* MediaFire */}
-
-            <div className="download-card">
-
-              <h3>
-                ⚔️ Cliente Completo High Five
-              </h3>
-
-              <p>
-                Incluye todo lo necesario para ingresar al servidor.
-              </p>
-
-              <a
-                href="https://www.mediafire.com/file/tf14b0qv5gftlx1/Ciber+Naka+L2+H5.rar/file"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn download-btn"
-              >
-                📥 Descargar desde MediaFire
-              </a>
-
-            </div>
-
-
-            {/* Google Drive */}
-
-            <div className="download-card">
-
-              <h3>
-                ⚔️ Cliente Completo High Five
-              </h3>
-
-              <p>
-                Incluye todo lo necesario para ingresar al servidor.
-              </p>
-
-              <a
-                href="https://drive.google.com/file/d/1E9tp7T_kUa46n6D4roGGw1YM-s40U9XH/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn download-btn"
-              >
-                📥 Descargar desde Google Drive
-              </a>
-
-            </div>
-
-          </div>
-
-        </section>
+        <DownloadsSection />
 
         {/* Votación */}
+
         <VotingSection />
+
+        {/* Staff */}
+
+        <StaffSection />
+
       </main>
 
-      {/* Redes Sociales */}
+
+      {/* Redes */}
+
       <section id="redes" className="social-section">
-        <h2>Contacto y Redes Sociales</h2>
+
+        <h2>Comunidad</h2>
 
         <p>
-          Unite a nuestra comunidad y mantenete al día con eventos,
-          novedades, soporte y anuncios de CiberNaka L2.
+          Seguinos en nuestras redes y enterate de todas las novedades.
         </p>
 
         <div className="social-icons">
+
           <a
             href="https://tiktok.com/@cibernaka"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link tiktok"
-            title="TikTok"
           >
             <i className="fab fa-tiktok"></i>
           </a>
@@ -178,7 +131,6 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             className="social-link youtube"
-            title="YouTube"
           >
             <i className="fab fa-youtube"></i>
           </a>
@@ -188,7 +140,6 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             className="social-link instagram"
-            title="Instagram"
           >
             <i className="fab fa-instagram"></i>
           </a>
@@ -198,7 +149,6 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             className="social-link twitch"
-            title="Twitch"
           >
             <i className="fab fa-twitch"></i>
           </a>
@@ -208,7 +158,6 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             className="social-link kick"
-            title="Kick"
           >
             <i className="fas fa-play-circle"></i>
           </a>
@@ -218,7 +167,6 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             className="social-link facebook"
-            title="Facebook"
           >
             <i className="fab fa-facebook-f"></i>
           </a>
@@ -228,20 +176,22 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             className="social-link discord"
-            title="Discord"
           >
             <i className="fab fa-discord"></i>
           </a>
+
         </div>
 
         <p className="social-discord">
-          🎮 ¿Necesitás ayuda o querés participar en eventos?
-          Contactanos a través de nuestras redes y comunidad.
+          🎮 Unite a nuestra comunidad para eventos, soporte y anuncios.
         </p>
+
       </section>
 
       <ScrollToTop />
+
       <Footer />
+
     </div>
   );
 }

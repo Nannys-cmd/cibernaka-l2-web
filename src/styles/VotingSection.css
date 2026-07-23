@@ -1,40 +1,191 @@
-/* VotingSection.css */
+/* =========================================
+   VOTING SECTION
+========================================= */
 
 .voting-section {
-  padding: 3rem 1rem;
-  text-align: center;
+  padding: 5rem 2rem;
+
   color: var(--color-texto);
+
+  text-align: center;
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.voting-header {
+  max-width: 800px;
+
+  margin: 0 auto 3rem;
+}
+
+.voting-header .section-kicker {
+  display: inline-block;
+
+  margin-bottom: 1rem;
+
+  color: var(--color-principal);
+
+  font-size: 0.85rem;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .voting-section h2 {
+  margin-bottom: 1rem;
+
   font-family: var(--font-titulo);
+
+  font-size: 2.8rem;
+
   color: var(--color-principal);
-  margin-bottom: 0.5rem;
+
+  text-shadow:
+    0 0 10px rgba(230, 57, 70, 0.6),
+    0 0 25px rgba(230, 57, 70, 0.3);
 }
 
 .voting-section p {
+  max-width: 700px;
+
+  margin: 0 auto;
+
   font-size: 1.1rem;
-  margin-bottom: 2rem;
+
+  line-height: 1.6;
 }
+
+
+/* =========================================
+   CONTENEDOR DE BANNERS
+========================================= */
 
 .voting-banners {
-  margin-top: 2rem;
   display: flex;
+
   justify-content: center;
+  align-items: center;
+
   gap: 2rem;
   flex-wrap: wrap;
+
+  max-width: 900px;
+
+  margin: 0 auto;
 }
+
+
+/* =========================================
+   ENLACE DE VOTACIÓN
+========================================= */
+
+.vote-img-link {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1rem;
+
+  padding: 1.5rem;
+
+  text-decoration: none;
+
+  background:
+    rgba(0, 0, 0, 0.65);
+
+  border: 1px solid rgba(230, 57, 70, 0.45);
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 0 15px rgba(0, 0, 0, 0.5);
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.vote-img-link:hover {
+  border-color: var(--color-principal);
+
+  box-shadow:
+    0 0 25px rgba(230, 57, 70, 0.45);
+}
+
+
+/* =========================================
+   IMAGEN DEL TOP
+========================================= */
 
 .vote-img-link img {
+  display: block;
+
   width: 140px;
   height: auto;
+
   border: 2px solid var(--color-principal);
+
   border-radius: 6px;
-  box-shadow: 0 0 15px rgba(230, 57, 70, 0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  box-shadow:
+    0 0 15px rgba(230, 57, 70, 0.4);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-.vote-img-link img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(230, 57, 70, 0.8);
+.vote-img-link:hover img {
+  box-shadow:
+    0 0 25px rgba(230, 57, 70, 0.8);
+}
+
+
+/* =========================================
+   NOMBRE DEL SITIO
+========================================= */
+
+.vote-site-name {
+  color: var(--color-principal);
+
+  font-family: var(--font-titulo);
+
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .voting-section {
+    padding: 3rem 1rem;
+  }
+
+  .voting-section h2 {
+    font-size: 2rem;
+  }
+
+  .voting-section p {
+    font-size: 1rem;
+  }
+
+  .voting-banners {
+    gap: 1rem;
+  }
+
+  .vote-img-link {
+    width: 100%;
+
+    max-width: 280px;
+  }
+
 }

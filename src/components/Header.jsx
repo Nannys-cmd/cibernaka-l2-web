@@ -1,39 +1,90 @@
 // src/components/Header.jsx
+
 import React from "react";
 import logoImg from "../assets/logo.jpg";
-import "../styles/Header.css"; // Assuming you have a CSS file for styling the header
+import "../styles/Header.css";
 
 function Header() {
-  return (
-    <header>
-      <div className="container header-container">
-        <div className="logo">
-          <img src={logoImg} alt="CiberNaka L2 Logo" className="logo-img" />
-        </div>
+  const navigationLinks = [
+    {
+      label: "Inicio",
+      href: "#inicio",
+    },
+    {
+      label: "Servidores",
+      href: "#servers",
+    },
+    {
+      label: "Premium",
+      href: "#vip",
+    },
+    {
+      label: "Descargas",
+      href: "#descargas",
+    },
+    {
+      label: "Votá",
+      href: "#votanos",
+    },
+    {
+      label: "Staff",
+      href: "#staff",
+    },
+    {
+      label: "Contacto",
+      href: "#redes",
+    },
+  ];
 
-        <nav>
+  return (
+    <header className="site-header">
+
+      <div className="container header-container">
+
+        {/* Logo */}
+
+        <a
+          href="#inicio"
+          className="logo"
+          aria-label="Volver al inicio de CiberNaka L2"
+        >
+
+          <img
+            src={logoImg}
+            alt="Logo de CiberNaka L2"
+            className="logo-img"
+          />
+
+        </a>
+
+
+        {/* Navegación principal */}
+
+        <nav
+          className="header-navigation"
+          aria-label="Navegación principal"
+        >
+
           <ul className="nav-links">
-            <li>
-              <a href="#inicio">Inicio</a>
-            </li>
-            <li>
-              <a href="#servers">Servidores</a>
-            </li>
-            <li>
-              <a href="#vip">Premium</a>
-            </li>
-            <li>
-              <a href="#descargas">Descargas</a>
-            </li>
-            <li>
-              <a href="#votanos">Votá</a>
-            </li>
-            <li>
-              <a href="#redes">Contacto</a>
-            </li>
+
+            {navigationLinks.map((link) => (
+
+              <li key={link.href}>
+
+                <a href={link.href}>
+                  {link.label}
+                </a>
+
+              </li>
+
+            ))}
+
           </ul>
+
         </nav>
+
       </div>
+
     </header>
   );
 }
