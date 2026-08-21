@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import Header from "./components/Header";
-//import Navigation from "./components/Navigation";
+// import Navigation from "./components/Navigation";
 import StatusBar from "./components/StatusBar";
 import FeatureSection from "./components/FeatureSection";
 import ServersSection from "./components/ServersSection";
@@ -45,13 +45,21 @@ function App() {
 
           <div className="launch-banner">
 
+            {/* Insignia */}
+
             <span className="launch-badge">
               ⚔️ CIBERNAKA L2 ⚔️
             </span>
 
+
+            {/* Título */}
+
             <h1 className="title-dramatico">
-              TRES SERVIDORES
+              Tres servidores.
             </h1>
+
+
+            {/* Subtítulo */}
 
             <p className="launch-description">
               Tres experiencias diferentes. Una misma comunidad.
@@ -64,18 +72,17 @@ function App() {
 
             <div className="launch-servers">
 
-
               {/* LILITH */}
 
-              <div className="launch-server">
+              <article className="launch-server">
 
-                <div className="server-icon">
+                <span className="server-icon">
                   🔥
-                </div>
+                </span>
 
-                <h3 className="server-name">
+                <h2 className="server-name">
                   LILITH
-                </h3>
+                </h2>
 
                 <span className="server-type">
                   MULTISKILLS
@@ -86,23 +93,23 @@ function App() {
                 </span>
 
                 <span className="server-status">
-                  ● ONLINE
+                  🟢 ONLINE
                 </span>
 
-              </div>
+              </article>
 
 
               {/* ANAKIM */}
 
-              <div className="launch-server">
+              <article className="launch-server">
 
-                <div className="server-icon">
+                <span className="server-icon">
                   ☠️
-                </div>
+                </span>
 
-                <h3 className="server-name">
+                <h2 className="server-name">
                   ANAKIM
-                </h3>
+                </h2>
 
                 <span className="server-type">
                   HARDCORE
@@ -113,27 +120,27 @@ function App() {
                 </span>
 
                 <span className="server-status">
-                  ● ONLINE
+                  🟢 ONLINE
                 </span>
 
-              </div>
+              </article>
 
 
               {/* DESPERION */}
 
-              <div className="launch-server server-new">
+              <article className="launch-server server-new">
 
                 <span className="new-badge">
                   🆕 NUEVO
                 </span>
 
-                <div className="server-icon">
+                <span className="server-icon">
                   ⚔️
-                </div>
+                </span>
 
-                <h3 className="server-name">
+                <h2 className="server-name">
                   DESPERION
-                </h3>
+                </h2>
 
                 <span className="server-type">
                   SUB-ACU
@@ -144,17 +151,15 @@ function App() {
                 </span>
 
                 <span className="server-status server-opening">
-                  ⚔️ 22 DE AGOSTO
+                  🔥 APERTURA 22 DE AGOSTO
                 </span>
 
-              </div>
+              </article>
 
             </div>
 
 
-            {/* =========================================
-                MENSAJE FINAL
-            ========================================= */}
+            {/* Mensaje final */}
 
             <p className="launch-footer">
               Elegí tu estilo de juego y comenzá tu aventura.
@@ -217,16 +222,19 @@ function App() {
 
 
       {/* =========================================
-          REDES / COMUNIDAD
+          REDES SOCIALES
       ========================================= */}
 
       <section id="redes" className="social-section">
 
-        <h2>Comunidad</h2>
+        <h2>
+          Comunidad
+        </h2>
 
         <p>
           Seguinos en nuestras redes y enterate de todas las novedades.
         </p>
+
 
         <div className="social-icons">
 
@@ -235,65 +243,79 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             className="social-link tiktok"
+            aria-label="TikTok"
           >
             <i className="fab fa-tiktok"></i>
           </a>
+
 
           <a
             href="https://www.youtube.com/channel/UCme01PzQB8nyRc8E8b9QnYQ"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link youtube"
+            aria-label="YouTube"
           >
             <i className="fab fa-youtube"></i>
           </a>
+
 
           <a
             href="https://instagram.com/cibernaka"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link instagram"
+            aria-label="Instagram"
           >
             <i className="fab fa-instagram"></i>
           </a>
+
 
           <a
             href="https://www.twitch.tv/cibernaka"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link twitch"
+            aria-label="Twitch"
           >
             <i className="fab fa-twitch"></i>
           </a>
+
 
           <a
             href="https://kick.com/cibernaka"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link kick"
+            aria-label="Kick"
           >
             <i className="fas fa-play-circle"></i>
           </a>
+
 
           <a
             href="https://www.facebook.com/CiberNakaGames"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link facebook"
+            aria-label="Facebook"
           >
             <i className="fab fa-facebook-f"></i>
           </a>
+
 
           <a
             href="https://discord.gg/ufkSuBAzM7"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link discord"
+            aria-label="Discord"
           >
             <i className="fab fa-discord"></i>
           </a>
 
         </div>
+
 
         <p className="social-discord">
           🎮 Unite a nuestra comunidad para eventos, soporte y anuncios.
