@@ -15,6 +15,10 @@ function Header() {
       href: "#servers",
     },
     {
+      label: "Novedades",
+      href: "#novedades",
+    },
+    {
       label: "Premium",
       href: "#vip",
     },

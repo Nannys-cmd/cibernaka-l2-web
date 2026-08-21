@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import StatusBar from "./components/StatusBar";
 import FeatureSection from "./components/FeatureSection";
 import ServersSection from "./components/ServersSection";
+import NewsSection from "./components/NewsSection";
 import PremiumSection from "./components/PremiumSection";
 import TutorialVideo from "./components/TutorialVideo";
 import VotingSection from "./components/VotingSection";
@@ -183,10 +184,15 @@ function App() {
 
         <ServersSection />
 
-
         {/* =========================================
-            PREMIUM
+            NOVEDADES
         ========================================= */}
+
+        <NewsSection />
+
+       {/* =========================================
+            PREMIUM
+        ========================================= */} 
 
         <PremiumSection />
 
