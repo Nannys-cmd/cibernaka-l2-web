@@ -8,17 +8,19 @@ const servers = [
   {
     name: "Lilith",
     type: "MULTISKILLS",
-    mode: "x1",
+    mode: "x5 EXP / x1 SP",
     icon: "🔥",
     description:
       "Una experiencia diferente para quienes buscan libertad, estrategia y creatividad en la construcción de su personaje.",
     features: [
       "Sistema Multiskills",
-      "Aprendé skills de cualquier profesión",
-      "Rates x1",
-      "Venta de buffs mediante personajes",
-      "Progreso basado en esfuerzo y dedicación",
-      "Mayor libertad para crear tu estilo de juego",
+      "Sin GMShop",
+      "Sin NPC Buffer",
+      "Sin GK Global",
+      "Sin Autofarm",
+      "Server Craft desde Grado S80",
+      "Buffs con duración de 1 hora",
+      "Dual Box: hasta 4 cuentas",
     ],
   },
   {
@@ -29,12 +31,34 @@ const servers = [
     description:
       "La experiencia clásica de Lineage 2 High Five para quienes buscan un verdadero desafío desde el comienzo.",
     features: [
-      "Experiencia clásica High Five",
-      "Inicio desde nivel 1",
-      "Rates x1",
-      "Venta de buffs mediante personajes",
+      "100% Retail",
+      "Sin GMShop",
+      "Sin NPC Buffer",
+      "Sin GK Global",
+      "Sin Autofarm",
+      "Server Craft desde Grado S",
+      "Buffs con duración de 1 hora",
       "Progreso completamente desafiante",
-      "Experiencia auténtica para jugadores hardcore",
+    ],
+  },
+  {
+    name: "Desperion",
+    type: "SUB-ACU",
+    mode: "x5",
+    icon: "⚔️",
+    badge: "🆕 NUEVO",
+    description:
+      "Una nueva experiencia Sub-Acu x5 para quienes buscan una progresión diferente, dinámica y accesible.",
+    features: [
+      "EXP x5",
+      "Adena x1",
+      "Sin GMShop",
+      "Sin NPC Buffer",
+      "Sin GK Global",
+      "Sin Autofarm",
+      "Base +3",
+      "Tercer cambio en la última sub",
+      "¡Totalmente gratis!",
     ],
   },
 ];
@@ -46,10 +70,12 @@ function ServersSection() {
       className="servers-section container"
     >
 
+      {/* ENCABEZADO */}
+
       <div className="servers-header">
 
         <span className="section-kicker">
-          ⚔️ DOS CAMINOS. UNA LEYENDA. ⚔️
+          ⚔️ TRES SERVIDORES. UNA LEYENDA. ⚔️
         </span>
 
         <h2 className="section-title">
@@ -57,13 +83,15 @@ function ServersSection() {
         </h2>
 
         <p className="servers-description">
-          Dos servidores. Dos estilos de juego.
+          Tres experiencias diferentes de Lineage 2 High Five.
           <br />
-          La decisión es tuya.
+          ¿Cuál será tu próxima aventura?
         </p>
 
       </div>
 
+
+      {/* SERVIDORES */}
 
       <div className="servers-grid">
 
@@ -90,6 +118,17 @@ function ServersSection() {
             }}
           >
 
+            {/* BADGE NUEVO */}
+
+            {server.badge && (
+              <span className="server-badge">
+                {server.badge}
+              </span>
+            )}
+
+
+            {/* CABECERA */}
+
             <div className="server-card-header">
 
               <span className="server-icon">
@@ -111,32 +150,44 @@ function ServersSection() {
             </div>
 
 
+            {/* RATES */}
+
             <div className="server-mode">
               RATES {server.mode}
             </div>
 
+
+            {/* DESCRIPCIÓN */}
 
             <p className="server-description">
               {server.description}
             </p>
 
 
+            {/* CARACTERÍSTICAS */}
+
             <ul className="server-features">
 
               {server.features.map((feature, idx) => (
 
                 <li key={idx}>
+
                   <span className="feature-check">
                     ✓
                   </span>
 
-                  {feature}
+                  <span>
+                    {feature}
+                  </span>
+
                 </li>
 
               ))}
 
             </ul>
 
+
+            {/* PIE */}
 
             <div className="server-card-footer">
 

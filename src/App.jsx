@@ -37,73 +37,188 @@ function App() {
 
       <main>
 
-        {/* Banner Principal */}
+        {/* =========================================
+            BANNER PRINCIPAL
+        ========================================= */}
 
         <section id="inicio" className="intro-section">
 
           <div className="launch-banner">
 
             <span className="launch-badge">
-              🔥 REAPERTURA OFICIAL 🔥
+              ⚔️ CIBERNAKA L2 ⚔️
             </span>
 
             <h1 className="title-dramatico">
-              CiberNaka L2
+              TRES SERVIDORES
             </h1>
 
-            <h2 className="launch-date">
-              SERVIDORES ONLINE
-            </h2>
-
             <p className="launch-description">
-              Dos formas diferentes de vivir Lineage II High Five.
+              Tres experiencias diferentes. Una misma comunidad.
             </p>
+
+
+            {/* =========================================
+                SERVIDORES
+            ========================================= */}
 
             <div className="launch-servers">
 
-              <span>🔥 Multiskills x1</span>
 
-              <span>☠️ Hardcore x1</span>
+              {/* LILITH */}
+
+              <div className="launch-server">
+
+                <div className="server-icon">
+                  🔥
+                </div>
+
+                <h3 className="server-name">
+                  LILITH
+                </h3>
+
+                <span className="server-type">
+                  MULTISKILLS
+                </span>
+
+                <span className="server-rate">
+                  x5
+                </span>
+
+                <span className="server-status">
+                  ● ONLINE
+                </span>
+
+              </div>
+
+
+              {/* ANAKIM */}
+
+              <div className="launch-server">
+
+                <div className="server-icon">
+                  ☠️
+                </div>
+
+                <h3 className="server-name">
+                  ANAKIM
+                </h3>
+
+                <span className="server-type">
+                  HARDCORE
+                </span>
+
+                <span className="server-rate">
+                  x1
+                </span>
+
+                <span className="server-status">
+                  ● ONLINE
+                </span>
+
+              </div>
+
+
+              {/* DESPERION */}
+
+              <div className="launch-server server-new">
+
+                <span className="new-badge">
+                  🆕 NUEVO
+                </span>
+
+                <div className="server-icon">
+                  ⚔️
+                </div>
+
+                <h3 className="server-name">
+                  DESPERION
+                </h3>
+
+                <span className="server-type">
+                  SUB-ACU
+                </span>
+
+                <span className="server-rate">
+                  x5
+                </span>
+
+                <span className="server-status server-opening">
+                  ⚔️ 22 DE AGOSTO
+                </span>
+
+              </div>
 
             </div>
+
+
+            {/* =========================================
+                MENSAJE FINAL
+            ========================================= */}
+
+            <p className="launch-footer">
+              Elegí tu estilo de juego y comenzá tu aventura.
+            </p>
 
           </div>
 
         </section>
 
 
-        {/* Características */}
+        {/* =========================================
+            CARACTERÍSTICAS
+        ========================================= */}
 
         <FeatureSection />
 
-        {/* Servidores */}
+
+        {/* =========================================
+            SERVIDORES
+        ========================================= */}
 
         <ServersSection />
 
-        {/* Premium */}
+
+        {/* =========================================
+            PREMIUM
+        ========================================= */}
 
         <PremiumSection />
 
-        {/* Tutorial */}
+
+        {/* =========================================
+            TUTORIAL
+        ========================================= */}
 
         <TutorialVideo />
 
-        {/* Descargas */}
+
+        {/* =========================================
+            DESCARGAS
+        ========================================= */}
 
         <DownloadsSection />
 
-        {/* Votación */}
+
+        {/* =========================================
+            VOTACIÓN
+        ========================================= */}
 
         <VotingSection />
 
-        {/* Staff */}
+
+        {/* =========================================
+            STAFF
+        ========================================= */}
 
         <StaffSection />
 
       </main>
 
 
-      {/* Redes */}
+      {/* =========================================
+          REDES / COMUNIDAD
+      ========================================= */}
 
       <section id="redes" className="social-section">
 
@@ -185,6 +300,7 @@ function App() {
         </p>
 
       </section>
+
 
       <ScrollToTop />
 
