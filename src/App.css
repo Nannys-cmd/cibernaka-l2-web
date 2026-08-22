@@ -118,7 +118,7 @@ h3 {
 
   font-family: var(--font-titulo);
 
-  font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+  font-size: clamp(2rem, 4vw, 3.2rem);
 
   color: #ffd700;
 

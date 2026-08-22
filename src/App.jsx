@@ -55,7 +55,7 @@ function App() {
             {/* Título */}
 
             <h1 className="title-dramatico">
-              Tres servidores.
+              Tres servidores. Todos online
             </h1>
 
 
