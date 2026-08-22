@@ -72,7 +72,10 @@ function App() {
 
             <div className="launch-servers">
 
-              {/* LILITH */}
+
+              {/* =========================================
+                  LILITH
+              ========================================= */}
 
               <article className="launch-server">
 
@@ -93,13 +96,15 @@ function App() {
                 </span>
 
                 <span className="server-status">
-                  🟢 ONLINE
+                  🔥 MULTISKILLS
                 </span>
 
               </article>
 
 
-              {/* ANAKIM */}
+              {/* =========================================
+                  ANAKIM
+              ========================================= */}
 
               <article className="launch-server">
 
@@ -120,19 +125,17 @@ function App() {
                 </span>
 
                 <span className="server-status">
-                  🟢 ONLINE
+                  ☠️ 100% RETAIL
                 </span>
 
               </article>
 
 
-              {/* DESPERION */}
+              {/* =========================================
+                  DESPERION
+              ========================================= */}
 
               <article className="launch-server server-new">
-
-                <span className="new-badge">
-                  🆕 NUEVO
-                </span>
 
                 <span className="server-icon">
                   ⚔️
@@ -151,10 +154,11 @@ function App() {
                 </span>
 
                 <span className="server-status server-opening">
-                  🔥 APERTURA 22 DE AGOSTO
+                  ⚔️ TOTALMENTE GRATIS
                 </span>
 
               </article>
+
 
             </div>
 
@@ -168,7 +172,6 @@ function App() {
           </div>
 
         </section>
-
 
         {/* =========================================
             CARACTERÍSTICAS
