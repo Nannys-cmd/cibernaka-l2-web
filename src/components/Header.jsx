@@ -1,10 +1,9 @@
-// src/components/Header.jsx
-
 import React from "react";
 import logoImg from "../assets/logo.jpg";
 import "../styles/Header.css";
 
 function Header() {
+
   const navigationLinks = [
     {
       label: "Inicio",
@@ -40,12 +39,16 @@ function Header() {
     },
   ];
 
+
   return (
+
     <header className="site-header">
+
 
       <div className="container header-container">
 
-        {/* Logo */}
+
+        {/* LOGO */}
 
         <a
           href="#inicio"
@@ -62,14 +65,17 @@ function Header() {
         </a>
 
 
-        {/* Navegación principal */}
+
+        {/* NAVEGACIÓN PRINCIPAL */}
 
         <nav
           className="header-navigation"
           aria-label="Navegación principal"
         >
 
+
           <ul className="nav-links">
+
 
             {navigationLinks.map((link) => (
 
@@ -83,14 +89,41 @@ function Header() {
 
             ))}
 
+
           </ul>
+
+
+
+          {/* BOTÓN STREAM */}
+
+          <a
+            href="https://cibernakastream.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="stream-link"
+          >
+
+            <span>
+              🎮
+            </span>
+
+            Stream
+
+          </a>
+
+
 
         </nav>
 
+
       </div>
 
+
     </header>
+
   );
+
 }
+
 
 export default Header;
