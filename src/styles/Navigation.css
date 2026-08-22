@@ -1,200 +1,124 @@
-/* ========================================
-   CIBERNAKA STREAM ACCESS
-   Botón flotante integrado al diseño
-======================================== */
+/* =====================================
+   BOTÓN STREAM CIBERNAKA
+===================================== */
 
+.l2-stream-wrapper {
 
-.main-nav {
+  position: fixed;
 
-    position: fixed;
+  top: 95px;
 
-    top: 160px;
-    right: 25px;
+  right: 25px;
 
-    z-index: 30;
-
-}
-
-
-/* ========================================
-   BOTÓN
-======================================== */
-
-
-.nav-link {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 0.5rem;
-
-
-    padding:
-        0.55rem 1rem;
-
-
-    background:
-        rgba(8, 8, 15, 0.85);
-
-
-    backdrop-filter:
-        blur(8px);
-
-
-    border:
-        1px solid rgba(139,92,246,0.35);
-
-
-    border-radius:
-        10px;
-
-
-    color:
-        #ddd;
-
-
-    text-decoration:
-        none;
-
-
-    font-size:
-        0.82rem;
-
-
-    font-weight:
-        700;
-
-
-    letter-spacing:
-        0.03em;
-
-
-    box-shadow:
-
-        0 8px 25px rgba(0,0,0,0.45);
-
-
-    transition:
-        all .3s ease;
+  z-index: 80;
 
 }
 
 
-/* ========================================
-   HOVER
-======================================== */
+.l2-stream-button {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: .5rem;
 
 
-.nav-link:hover {
-
-    color:
-        #fff;
+  padding: .55rem 1rem;
 
 
-    border-color:
-        #8b5cf6;
+  background:
+    rgba(10,10,15,.85);
 
 
-    background:
-        rgba(139,92,246,0.15);
+  border:
+    1px solid rgba(139,92,246,.35);
 
 
-    transform:
-        translateY(-3px);
+  border-radius:
+    10px;
 
 
-    box-shadow:
-
-        0 12px 30px rgba(0,0,0,0.5),
-
-        0 0 20px rgba(139,92,246,0.3);
-
-}
+  color:
+    #fff;
 
 
-
-/* ========================================
-   ICONO
-======================================== */
+  text-decoration:
+    none;
 
 
-.nav-icon {
-
-    font-size:
-        1.1rem;
-
-}
+  font-size:
+    .85rem;
 
 
-/* ========================================
-   TEXTO
-======================================== */
+  font-weight:
+    700;
 
 
-.nav-text {
+  backdrop-filter:
+    blur(10px);
 
-    white-space:
-        nowrap;
+
+  box-shadow:
+    0 8px 25px rgba(0,0,0,.5);
+
+
+  transition:
+    .3s ease;
 
 }
 
 
+.l2-stream-button:hover {
 
-/* ========================================
-   MOBILE
-======================================== */
+  border-color:
+    #8b5cf6;
+
+
+  transform:
+    translateY(-2px);
+
+}
+
+
+.l2-stream-icon {
+
+  font-size:
+    1.1rem;
+
+}
 
 
 @media(max-width:768px){
 
-    .main-nav {
+  .l2-stream-wrapper {
 
-        top:
-            120px;
+    top:85px;
 
-        right:
-            15px;
+    right:15px;
 
-    }
+  }
 
 
-    .nav-text {
+  .l2-stream-text {
 
-        display:
-            none;
+    display:none;
 
-    }
-
-
-    .nav-link {
-
-        width:
-            44px;
-
-        height:
-            44px;
+  }
 
 
-        justify-content:
-            center;
+  .l2-stream-button {
 
+    width:45px;
 
-        padding:
-            0;
+    height:45px;
 
+    justify-content:center;
 
-        border-radius:
-            50%;
+    border-radius:50%;
 
-    }
+    padding:0;
 
-
-    .nav-icon {
-
-        font-size:
-            1.4rem;
-
-    }
+  }
 
 }

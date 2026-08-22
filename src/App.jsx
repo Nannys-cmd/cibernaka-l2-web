@@ -2,7 +2,6 @@
 
 import React, { useEffect } from "react";
 import Header from "./components/Header";
-import Navigation from "./components/Navigation";
 import StatusBar from "./components/StatusBar";
 import FeatureSection from "./components/FeatureSection";
 import ServersSection from "./components/ServersSection";
@@ -33,8 +32,6 @@ function App() {
     <div className="overlay-bg">
 
       <Header />
-
-      <Navigation />
 
       <StatusBar />
 
@@ -192,9 +189,9 @@ function App() {
 
         <NewsSection />
 
-       {/* =========================================
+        {/* =========================================
             PREMIUM
-        ========================================= */} 
+        ========================================= */}
 
         <PremiumSection />
 

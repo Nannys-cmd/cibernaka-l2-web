@@ -1,30 +1,28 @@
-// src/components/Navigation.jsx
-
-import '../styles/Navigation.css'
+import "../styles/Navigation.css";
 
 function Navigation() {
-    return (
-        <nav className="main-nav">
+  return (
+    <div className="l2-stream-wrapper">
 
-            <a
-                href="https://cibernakastream.netlify.app/"
-                className="nav-link nav-link-streams"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
+      <a
+        href="https://cibernakastream.netlify.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="l2-stream-button"
+      >
 
-                <span className="nav-icon">
-                    🎮
-                </span>
+        <span className="l2-stream-icon">
+          🎮
+        </span>
 
-                <span className="nav-text">
-                    CiberNaka Stream
-                </span>
+        <span className="l2-stream-text">
+          CiberNaka Stream
+        </span>
 
-            </a>
+      </a>
 
-        </nav>
-    )
+    </div>
+  );
 }
 
-export default Navigation
+export default Navigation;
