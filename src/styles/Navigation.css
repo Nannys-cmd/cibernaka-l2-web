@@ -1,29 +1,18 @@
 /* ========================================
-   NAVEGACIÓN CIBERNAKA STREAM
+   CIBERNAKA STREAM ACCESS
+   Botón flotante integrado al diseño
 ======================================== */
 
-nav.main-nav {
-  position: relative;
 
-  z-index: 20;
+.main-nav {
 
-  display: flex;
+    position: fixed;
 
-  justify-content: center;
-  align-items: center;
+    top: 160px;
+    right: 25px;
 
-  width: 100%;
+    z-index: 30;
 
-  margin: 0 auto;
-
-  padding: 0.7rem 1rem;
-
-  background: rgba(5, 5, 10, 0.88);
-
-  border-top: 1px solid rgba(139, 92, 246, 0.15);
-  border-bottom: 1px solid rgba(139, 92, 246, 0.25);
-
-  backdrop-filter: blur(10px);
 }
 
 
@@ -31,40 +20,64 @@ nav.main-nav {
    BOTÓN
 ======================================== */
 
-nav.main-nav a.nav-link {
-  display: inline-flex;
 
-  align-items: center;
-  justify-content: center;
+.nav-link {
 
-  gap: 0.55rem;
+    display: flex;
 
-  padding: 0.55rem 1.2rem;
+    align-items: center;
 
-  color: #eaeaea;
+    gap: 0.5rem;
 
-  background: rgba(139, 92, 246, 0.08);
 
-  border: 1px solid rgba(139, 92, 246, 0.35);
+    padding:
+        0.55rem 1rem;
 
-  border-radius: 10px;
 
-  text-decoration: none;
+    background:
+        rgba(8, 8, 15, 0.85);
 
-  font-weight: 700;
 
-  font-size: 0.9rem;
+    backdrop-filter:
+        blur(8px);
 
-  letter-spacing: 0.02em;
 
-  box-shadow:
-    0 4px 15px rgba(0, 0, 0, 0.35);
+    border:
+        1px solid rgba(139,92,246,0.35);
 
-  transition:
-    transform 0.3s ease,
-    background 0.3s ease,
-    border-color 0.3s ease,
-    box-shadow 0.3s ease;
+
+    border-radius:
+        10px;
+
+
+    color:
+        #ddd;
+
+
+    text-decoration:
+        none;
+
+
+    font-size:
+        0.82rem;
+
+
+    font-weight:
+        700;
+
+
+    letter-spacing:
+        0.03em;
+
+
+    box-shadow:
+
+        0 8px 25px rgba(0,0,0,0.45);
+
+
+    transition:
+        all .3s ease;
+
 }
 
 
@@ -72,32 +85,45 @@ nav.main-nav a.nav-link {
    HOVER
 ======================================== */
 
-nav.main-nav a.nav-link:hover {
-  color: #fff;
 
-  background: rgba(139, 92, 246, 0.18);
+.nav-link:hover {
 
-  border-color: #8b5cf6;
+    color:
+        #fff;
 
-  transform: translateY(-2px);
 
-  box-shadow:
-    0 6px 20px rgba(0, 0, 0, 0.5),
-    0 0 20px rgba(139, 92, 246, 0.3);
+    border-color:
+        #8b5cf6;
+
+
+    background:
+        rgba(139,92,246,0.15);
+
+
+    transform:
+        translateY(-3px);
+
+
+    box-shadow:
+
+        0 12px 30px rgba(0,0,0,0.5),
+
+        0 0 20px rgba(139,92,246,0.3);
+
 }
+
 
 
 /* ========================================
    ICONO
 ======================================== */
 
-nav.main-nav .nav-icon {
-  font-size: 1.1rem;
 
-  filter:
-    drop-shadow(
-      0 0 7px rgba(139, 92, 246, 0.7)
-    );
+.nav-icon {
+
+    font-size:
+        1.1rem;
+
 }
 
 
@@ -105,29 +131,70 @@ nav.main-nav .nav-icon {
    TEXTO
 ======================================== */
 
-nav.main-nav .nav-text {
-  letter-spacing: 0.03em;
+
+.nav-text {
+
+    white-space:
+        nowrap;
+
 }
 
 
+
 /* ========================================
-   MÓVIL
+   MOBILE
 ======================================== */
 
-@media (max-width: 768px) {
 
-  nav.main-nav {
-    padding: 0.6rem 0.8rem;
-  }
+@media(max-width:768px){
 
-  nav.main-nav a.nav-link {
-    width: 100%;
+    .main-nav {
 
-    max-width: 260px;
+        top:
+            120px;
 
-    padding: 0.55rem 1rem;
+        right:
+            15px;
 
-    font-size: 0.85rem;
-  }
+    }
+
+
+    .nav-text {
+
+        display:
+            none;
+
+    }
+
+
+    .nav-link {
+
+        width:
+            44px;
+
+        height:
+            44px;
+
+
+        justify-content:
+            center;
+
+
+        padding:
+            0;
+
+
+        border-radius:
+            50%;
+
+    }
+
+
+    .nav-icon {
+
+        font-size:
+            1.4rem;
+
+    }
 
 }
