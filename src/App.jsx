@@ -121,7 +121,7 @@ function App() {
                 </span>
 
                 <span className="server-rate">
-                  x1
+                  x5000
                 </span>
 
                 <span className="server-status">
