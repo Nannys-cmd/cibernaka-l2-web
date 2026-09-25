@@ -1,0 +1,407 @@
+/* =========================================
+   HEADER
+========================================= */
+
+.site-header {
+  position: sticky;
+
+  top: 0;
+
+  z-index: 100;
+
+  width: 100%;
+
+  padding: 0.8rem 0;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(10, 10, 10, 0.97),
+      rgba(25, 5, 5, 0.97),
+      rgba(10, 10, 10, 0.97)
+    );
+
+  border-bottom: 2px solid var(--color-principal);
+
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+
+/* =========================================
+   CONTENEDOR
+========================================= */
+
+.header-container {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 2rem;
+
+  width: 90%;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+  display: flex;
+
+  align-items: center;
+
+  flex-shrink: 0;
+
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 60px;
+
+  height: 60px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+
+  border: 1px solid rgba(230, 57, 70, 0.5);
+
+  box-shadow:
+    0 0 15px #ff6600,
+    0 0 30px #ff3300;
+
+  animation:
+    glowPulse 3s ease-in-out infinite;
+
+  transition:
+    transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform:
+    rotate(-8deg)
+    scale(1.1);
+}
+
+/* =========================================
+   BOTÓN STREAM
+========================================= */
+
+
+.stream-link {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: .4rem;
+
+
+  padding: .45rem .8rem;
+
+
+  margin-left: 1rem;
+
+
+  color: var(--color-texto);
+
+
+  background:
+
+    rgba(139, 92, 246, 0.12);
+
+
+  border:
+
+    1px solid rgba(139, 92, 246, 0.45);
+
+
+  border-radius:
+
+    10px;
+
+
+  text-decoration:
+
+    none;
+
+
+  font-family:
+
+    var(--font-menu);
+
+
+  font-size:
+
+    .85rem;
+
+
+  font-weight:
+
+    600;
+
+
+  letter-spacing:
+
+    1px;
+
+
+  transition:
+
+    all .3s ease;
+
+}
+
+
+
+.stream-link:hover {
+
+
+  color:
+
+    #fff;
+
+
+  background:
+
+    rgba(139,92,246,.25);
+
+
+  border-color:
+
+    #8b5cf6;
+
+
+  box-shadow:
+
+    0 0 15px rgba(139,92,246,.45);
+
+
+  transform:
+
+    translateY(-2px);
+
+}
+
+
+
+/* =========================================
+   RESPONSIVE STREAM
+========================================= */
+
+
+@media (max-width: 900px) {
+
+
+  .stream-link {
+
+    padding:
+
+      .4rem .6rem;
+
+
+    font-size:
+
+      .75rem;
+
+  }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+
+  .stream-link {
+
+    margin-left:
+
+      .5rem;
+
+
+    font-size:
+
+      .7rem;
+
+  }
+
+}
+
+/* =========================================
+   ANIMACIÓN DEL LOGO
+========================================= */
+
+@keyframes glowPulse {
+
+  0%,
+  100% {
+    box-shadow:
+      0 0 10px #ff6600,
+      0 0 25px #ff3300;
+  }
+
+  50% {
+    box-shadow:
+      0 0 20px #ff9933,
+      0 0 40px #ff5511;
+  }
+
+}
+
+
+/* =========================================
+   NAVEGACIÓN
+========================================= */
+
+.header-navigation {
+  display: flex;
+
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 1.4rem;
+
+  margin: 0;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav-links a {
+  position: relative;
+
+  color: var(--color-texto);
+
+  font-family: var(--font-menu);
+
+  font-size: 0.9rem;
+
+  font-weight: 500;
+
+  letter-spacing: 1px;
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+
+  transition:
+    color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -6px;
+
+  width: 0;
+
+  height: 2px;
+
+  background: var(--color-principal);
+
+  box-shadow:
+    0 0 8px var(--color-principal);
+
+  transition:
+    width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--color-principal);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .header-container {
+    gap: 1rem;
+  }
+
+  .nav-links {
+    gap: 0.8rem;
+  }
+
+  .nav-links a {
+    font-size: 0.75rem;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .site-header {
+    padding: 0.6rem 0;
+  }
+
+  .header-container {
+    width: 95%;
+  }
+
+  .logo-img {
+    width: 50px;
+
+    height: 50px;
+  }
+
+  .nav-links {
+    gap: 0.5rem;
+
+    flex-wrap: wrap;
+
+    justify-content: flex-end;
+  }
+
+  .nav-links a {
+    font-size: 0.65rem;
+
+    letter-spacing: 0.5px;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .header-container {
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    max-width: 220px;
+
+    gap: 0.4rem 0.7rem;
+  }
+
+  .nav-links a {
+    font-size: 0.6rem;
+  }
+
+}

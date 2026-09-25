@@ -1,0 +1,559 @@
+/* =========================================
+   DOWNLOADS SECTION
+========================================= */
+
+.download-section {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.download-header {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.download-header .section-kicker {
+  display: inline-block;
+  margin-bottom: 1rem;
+
+  color: var(--color-principal);
+
+  font-size: 0.85rem;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.download-header h2 {
+  margin-bottom: 1rem;
+
+  font-family: var(--font-titulo);
+  font-size: 2.8rem;
+
+  color: var(--color-principal);
+
+  text-shadow:
+    0 0 10px rgba(230, 57, 70, 0.6),
+    0 0 25px rgba(230, 57, 70, 0.3);
+}
+
+.download-header p {
+  max-width: 700px;
+  margin: 0 auto;
+
+  color: var(--color-texto);
+
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   CONTENEDOR DE DESCARGAS
+========================================= */
+
+.downloads-container {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 2rem;
+
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  align-items: stretch;
+}
+
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+.download-card {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+
+  height: 100%;
+
+  padding: 2rem;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(0, 0, 0, 0.85),
+      rgba(30, 20, 10, 0.85)
+    );
+
+  border: 1px solid rgba(230, 57, 70, 0.5);
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 0 20px rgba(0, 0, 0, 0.6);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.download-card:hover {
+  transform: translateY(-8px);
+
+  border-color: var(--color-principal);
+
+  box-shadow:
+    0 0 25px rgba(230, 57, 70, 0.45);
+}
+
+
+/* =========================================
+   ÍCONO
+========================================= */
+
+.download-icon {
+  margin-bottom: 1rem;
+
+  font-size: 3rem;
+
+  filter:
+    drop-shadow(0 0 8px rgba(255, 215, 0, 0.5));
+}
+
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+.download-card h3 {
+  min-height: 3.2rem;
+
+  margin-bottom: 1rem;
+
+  color: var(--color-principal);
+
+  font-family: var(--font-titulo);
+
+  font-size: 1.3rem;
+
+  line-height: 1.3;
+}
+
+
+/* =========================================
+   DESCRIPCIÓN
+========================================= */
+
+.download-card p {
+  flex-grow: 1;
+
+  margin-bottom: 1.5rem;
+
+  color: var(--color-texto);
+
+  font-size: 0.95rem;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   BOTÓN
+========================================= */
+
+.download-btn {
+  display: inline-block;
+
+  width: 100%;
+  max-width: 300px;
+
+  padding: 0.8rem 1.4rem;
+
+  color: var(--color-texto);
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  background:
+    var(--color-boton);
+
+  border-radius: 6px;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+
+  background:
+    var(--color-boton-hover);
+
+  box-shadow:
+    0 0 15px rgba(230, 57, 70, 0.5);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+
+  .downloads-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    max-width: 750px;
+  }
+
+  /*
+    Si queda una tercera tarjeta sola,
+    la centramos automáticamente.
+  */
+
+  .download-card:last-child {
+    grid-column: 1 / -1;
+
+    justify-self: center;
+
+    width: 100%;
+    max-width: calc(
+      (100% - 2rem) / 2
+    );
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .download-section {
+    padding: 3rem 1rem;
+  }
+
+  .download-header h2 {
+    font-size: 2rem;
+  }
+
+  .download-header p {
+    font-size: 1rem;
+  }
+
+  .downloads-container {
+    grid-template-columns: 1fr;
+
+    max-width: 500px;
+  }
+
+  .download-card {
+    padding: 1.5rem;
+  }
+
+  .download-card:last-child {
+    grid-column: auto;
+
+    width: 100%;
+    max-width: none;
+  }
+
+  .download-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}/* =========================================
+   DOWNLOADS SECTION
+========================================= */
+
+.download-section {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.download-header {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.download-header .section-kicker {
+  display: inline-block;
+  margin-bottom: 1rem;
+
+  color: var(--color-principal);
+
+  font-size: 0.85rem;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.download-header h2 {
+  margin-bottom: 1rem;
+
+  font-family: var(--font-titulo);
+  font-size: 2.8rem;
+
+  color: var(--color-principal);
+
+  text-shadow:
+    0 0 10px rgba(230, 57, 70, 0.6),
+    0 0 25px rgba(230, 57, 70, 0.3);
+}
+
+.download-header p {
+  max-width: 700px;
+  margin: 0 auto;
+
+  color: var(--color-texto);
+
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   CONTENEDOR DE DESCARGAS
+========================================= */
+
+.downloads-container {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 2rem;
+
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  align-items: stretch;
+}
+
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+.download-card {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+
+  height: 100%;
+
+  padding: 2rem;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(0, 0, 0, 0.85),
+      rgba(30, 20, 10, 0.85)
+    );
+
+  border: 1px solid rgba(230, 57, 70, 0.5);
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 0 20px rgba(0, 0, 0, 0.6);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.download-card:hover {
+  transform: translateY(-8px);
+
+  border-color: var(--color-principal);
+
+  box-shadow:
+    0 0 25px rgba(230, 57, 70, 0.45);
+}
+
+
+/* =========================================
+   ÍCONO
+========================================= */
+
+.download-icon {
+  margin-bottom: 1rem;
+
+  font-size: 3rem;
+
+  filter:
+    drop-shadow(0 0 8px rgba(255, 215, 0, 0.5));
+}
+
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+.download-card h3 {
+  min-height: 3.2rem;
+
+  margin-bottom: 1rem;
+
+  color: var(--color-principal);
+
+  font-family: var(--font-titulo);
+
+  font-size: 1.3rem;
+
+  line-height: 1.3;
+}
+
+
+/* =========================================
+   DESCRIPCIÓN
+========================================= */
+
+.download-card p {
+  flex-grow: 1;
+
+  margin-bottom: 1.5rem;
+
+  color: var(--color-texto);
+
+  font-size: 0.95rem;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   BOTÓN
+========================================= */
+
+.download-btn {
+  display: inline-block;
+
+  width: 100%;
+  max-width: 300px;
+
+  padding: 0.8rem 1.4rem;
+
+  color: var(--color-texto);
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  background:
+    var(--color-boton);
+
+  border-radius: 6px;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+
+  background:
+    var(--color-boton-hover);
+
+  box-shadow:
+    0 0 15px rgba(230, 57, 70, 0.5);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+
+  .downloads-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    max-width: 750px;
+  }
+
+  /*
+    Si queda una tercera tarjeta sola,
+    la centramos automáticamente.
+  */
+
+  .download-card:last-child {
+    grid-column: 1 / -1;
+
+    justify-self: center;
+
+    width: 100%;
+    max-width: calc(
+      (100% - 2rem) / 2
+    );
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .download-section {
+    padding: 3rem 1rem;
+  }
+
+  .download-header h2 {
+    font-size: 2rem;
+  }
+
+  .download-header p {
+    font-size: 1rem;
+  }
+
+  .downloads-container {
+    grid-template-columns: 1fr;
+
+    max-width: 500px;
+  }
+
+  .download-card {
+    padding: 1.5rem;
+  }
+
+  .download-card:last-child {
+    grid-column: auto;
+
+    width: 100%;
+    max-width: none;
+  }
+
+  .download-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,84 @@
+/* =========================================
+   RESET GLOBAL Y VARIABLES
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   VARIABLES GLOBALES
+========================================= */
+
+:root {
+  --font-titulo: 'Cinzel', serif;
+  --font-parrafo: 'EB Garamond', serif;
+  --font-menu: 'MedievalSharp', cursive;
+
+  --color-fondo: #121212;
+  --color-principal: #e63946;
+  --color-secundario: #a8dadc;
+  --color-texto: #eee;
+  --color-texto-secundario: #bbb;
+
+  --color-boton: var(--color-principal);
+  --color-boton-hover: #d62828;
+}
+
+
+/* =========================================
+   HTML Y BODY
+========================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: var(--font-parrafo);
+
+  background-color: var(--color-fondo);
+
+  color: var(--color-texto);
+
+  line-height: 1.6;
+
+  overflow-x: hidden;
+}
+
+
+/* =========================================
+   ENLACES
+========================================= */
+
+a {
+  color: inherit;
+}
+
+
+/* =========================================
+   IMÁGENES
+========================================= */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* =========================================
+   RESPONSIVE GENERAL
+========================================= */
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 95%;
+    padding: 0 1rem;
+  }
+
+}

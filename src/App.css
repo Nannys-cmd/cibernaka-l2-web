@@ -1,0 +1,731 @@
+/* =========================================
+   APP GLOBAL STYLES
+========================================= */
+
+
+/* =========================================
+   TÍTULOS GENERALES
+========================================= */
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-titulo);
+
+  letter-spacing: 1px;
+
+  color: var(--color-principal);
+}
+
+
+/* =========================================
+   CONTENEDOR GENERAL
+========================================= */
+
+.container {
+  width: 90%;
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   SECCIÓN DE INICIO
+========================================= */
+
+.intro-section {
+  width: 100%;
+
+  padding: 2.5rem 2rem;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   BANNER PRINCIPAL
+========================================= */
+
+.launch-banner {
+  width: 100%;
+
+  max-width: 1050px;
+
+  padding: 1.5rem 1.6rem;
+
+  border: 1px solid var(--color-principal);
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(0, 0, 0, 0.88),
+      rgba(25, 5, 5, 0.82),
+      rgba(10, 10, 10, 0.94)
+    );
+
+  box-shadow:
+    0 0 18px rgba(230, 57, 70, 0.25);
+
+  animation:
+    pulseBanner 4s infinite;
+}
+
+
+/* =========================================
+   INSIGNIA
+========================================= */
+
+.launch-badge {
+  display: inline-block;
+
+  padding: 0.35rem 0.9rem;
+
+  margin-bottom: 0.5rem;
+
+  border-radius: 30px;
+
+  background: rgba(230, 57, 70, 0.9);
+
+  color: white;
+
+  font-size: 0.78rem;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  box-shadow:
+    0 0 10px rgba(230, 57, 70, 0.4);
+}
+
+
+/* =========================================
+   TÍTULO PRINCIPAL
+========================================= */
+
+.title-dramatico {
+  margin: 0.2rem 0;
+
+  font-family: var(--font-titulo);
+
+  font-size: clamp(2rem, 4vw, 3.2rem);
+
+  color: #ffd700;
+
+  text-shadow:
+    0 0 10px rgba(255, 215, 0, 0.65),
+    0 0 22px rgba(255, 215, 0, 0.3);
+}
+
+
+/* =========================================
+   DESCRIPCIÓN
+========================================= */
+
+.launch-description {
+  max-width: 700px;
+
+  margin: 0.3rem auto 1rem;
+
+  color: var(--color-texto);
+
+  font-size: 1.2rem;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   SERVIDORES DEL BANNER
+========================================= */
+
+.launch-servers {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 0.9rem;
+
+  width: 100%;
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   TARJETA DE SERVIDOR
+========================================= */
+
+.launch-server {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 145px;
+
+  padding: 0.75rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.045),
+      rgba(0, 0, 0, 0.4)
+    );
+
+  box-shadow:
+    0 0 10px rgba(0, 0, 0, 0.35);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.launch-server:hover {
+  transform:
+    translateY(-4px);
+
+  border-color:
+    var(--color-principal);
+
+  box-shadow:
+    0 0 18px rgba(230, 57, 70, 0.3);
+}
+
+
+/* =========================================
+   ICONO DEL SERVIDOR
+========================================= */
+
+.server-icon {
+  font-size: 1.9rem;
+
+  margin-bottom: 0.2rem;
+
+  filter:
+    drop-shadow(
+      0 0 7px
+      rgba(255, 100, 30, 0.5)
+    );
+}
+
+
+/* =========================================
+   NOMBRE DEL SERVIDOR
+========================================= */
+
+.server-name {
+  margin: 0.05rem 0;
+
+  font-family: var(--font-titulo);
+
+  font-size: 1.4rem;
+
+  color: #ffffff;
+
+  letter-spacing: 2px;
+
+  text-shadow:
+    0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+
+/* =========================================
+   TIPO DE SERVIDOR
+========================================= */
+
+.server-type {
+  margin-top: 0.15rem;
+
+  color: #ffd166;
+
+  font-size: 0.82rem;
+
+  font-weight: bold;
+
+  letter-spacing: 1.2px;
+}
+
+
+/* =========================================
+   RATE
+========================================= */
+
+.server-rate {
+  margin-top: 0.05rem;
+
+  color: #ffffff;
+
+  font-size: 1.1rem;
+
+  font-weight: 800;
+
+  text-shadow:
+    0 0 7px rgba(255, 255, 255, 0.3);
+}
+
+
+/* =========================================
+   ESTADO DEL SERVIDOR
+========================================= */
+
+.server-status {
+  margin-top: 0.55rem;
+
+  color: #53fc18;
+
+  font-size: 0.68rem;
+
+  font-weight: bold;
+
+  letter-spacing: 0.7px;
+
+  text-shadow:
+    0 0 7px rgba(83, 252, 24, 0.55);
+}
+
+
+/* =========================================
+   DESPERION - SERVIDOR NUEVO
+========================================= */
+
+.server-new {
+  border-color:
+    rgba(255, 120, 30, 0.7);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(100, 30, 5, 0.28),
+      rgba(0, 0, 0, 0.48)
+    );
+
+  box-shadow:
+    0 0 18px rgba(255, 90, 20, 0.2);
+}
+
+
+.server-new:hover {
+  border-color:
+    #ff6b2c;
+
+  box-shadow:
+    0 0 26px rgba(255, 90, 20, 0.45);
+}
+
+
+/* =========================================
+   ETIQUETA NUEVO
+========================================= */
+
+.new-badge {
+  position: absolute;
+
+  top: 0.5rem;
+
+  right: 0.5rem;
+
+  padding: 0.22rem 0.45rem;
+
+  border-radius: 20px;
+
+  background:
+    rgba(255, 90, 20, 0.9);
+
+  color: white;
+
+  font-size: 0.55rem;
+
+  font-weight: bold;
+
+  letter-spacing: 0.7px;
+
+  box-shadow:
+    0 0 8px rgba(255, 90, 20, 0.45);
+}
+
+
+/* =========================================
+   ESTADO DE APERTURA DESPERION
+========================================= */
+
+.server-opening {
+  color: #ffd166;
+
+  text-shadow:
+    0 0 8px rgba(255, 209, 102, 0.7);
+}
+
+
+/* =========================================
+   MENSAJE FINAL DEL BANNER
+========================================= */
+
+.launch-footer {
+  margin: 0.8rem 0 0;
+
+  color: var(--color-texto-secundario);
+
+  font-size: 1rem;
+
+  font-style: italic;
+}
+
+
+/* =========================================
+   ANIMACIÓN DEL BANNER
+========================================= */
+
+@keyframes pulseBanner {
+
+  0% {
+    box-shadow:
+      0 0 12px rgba(230, 57, 70, 0.22);
+  }
+
+  50% {
+    box-shadow:
+      0 0 22px rgba(230, 57, 70, 0.45);
+  }
+
+  100% {
+    box-shadow:
+      0 0 12px rgba(230, 57, 70, 0.22);
+  }
+
+}
+
+
+/* =========================================
+   REDES SOCIALES
+========================================= */
+
+.social-section {
+  padding: 5rem 1rem;
+
+  text-align: center;
+}
+
+
+.social-section h2 {
+  margin-bottom: 1rem;
+
+  color: var(--color-principal);
+
+  font-family: var(--font-titulo);
+
+  text-shadow:
+    0 0 12px rgba(255, 60, 60, 0.6);
+}
+
+
+.social-section > p {
+  color: var(--color-texto);
+
+  margin-bottom: 1rem;
+}
+
+
+/* =========================================
+   ICONOS SOCIALES
+========================================= */
+
+.social-icons {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 1.5rem;
+
+  margin-top: 2rem;
+}
+
+
+.social-link {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 0.7rem;
+
+  border: 2px solid transparent;
+
+  border-radius: 50%;
+
+  color: var(--color-texto-secundario);
+
+  font-size: 2.2rem;
+
+  text-decoration: none;
+
+  transition:
+    all 0.3s ease;
+}
+
+
+.social-link:hover {
+  transform: scale(1.2);
+
+  color: var(--color-principal);
+
+  border-color: var(--color-principal);
+
+  box-shadow:
+    0 0 12px var(--color-principal);
+}
+
+
+/* =========================================
+   COLORES DE REDES
+========================================= */
+
+.social-link.tiktok:hover {
+  color: #69c9d0;
+
+  border-color: #69c9d0;
+
+  box-shadow:
+    0 0 12px #69c9d0;
+}
+
+
+.social-link.youtube:hover {
+  color: #ff0000;
+
+  border-color: #ff0000;
+
+  box-shadow:
+    0 0 12px #ff0000;
+}
+
+
+.social-link.instagram:hover {
+  color: #e1306c;
+
+  border-color: #e1306c;
+
+  box-shadow:
+    0 0 12px #e1306c;
+}
+
+
+.social-link.twitch:hover {
+  color: #9146ff;
+
+  border-color: #9146ff;
+
+  box-shadow:
+    0 0 12px #9146ff;
+}
+
+
+.social-link.kick:hover {
+  color: #53fc18;
+
+  border-color: #53fc18;
+
+  box-shadow:
+    0 0 12px #53fc18;
+}
+
+
+.social-link.facebook:hover {
+  color: #1877f2;
+
+  border-color: #1877f2;
+
+  box-shadow:
+    0 0 12px #1877f2;
+}
+
+
+.social-link.discord:hover {
+  color: #5865f2;
+
+  border-color: #5865f2;
+
+  box-shadow:
+    0 0 12px #5865f2;
+}
+
+
+/* =========================================
+   TEXTO DE DISCORD
+========================================= */
+
+.social-discord {
+  max-width: 700px;
+
+  margin: 2rem auto 0;
+
+  color: var(--color-texto);
+
+  font-size: 1.1rem;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .launch-servers {
+    grid-template-columns:
+      1fr;
+
+    max-width: 500px;
+  }
+
+  .launch-server {
+    min-height: 175px;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .intro-section {
+    padding: 2.3rem 1rem;
+  }
+
+  .launch-banner {
+    padding: 1.8rem 1rem;
+  }
+
+  .launch-badge {
+    font-size: 0.72rem;
+  }
+
+  .title-dramatico {
+    font-size:
+      clamp(2.1rem, 9vw, 3.5rem);
+  }
+
+  .launch-description {
+    font-size: 1.05rem;
+  }
+
+  .launch-server {
+    min-height: 165px;
+
+    padding: 1rem;
+  }
+
+  .server-name {
+    font-size: 1.35rem;
+  }
+
+  .server-icon {
+    font-size: 1.9rem;
+  }
+
+  .social-section {
+    padding: 3rem 1rem;
+  }
+
+  .social-icons {
+    gap: 1rem;
+  }
+
+  .social-link {
+    font-size: 1.8rem;
+
+    padding: 0.6rem;
+  }
+
+  .social-discord {
+    padding: 0 1rem;
+
+    font-size: 1rem;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .intro-section {
+    padding: 1.8rem 0.7rem;
+  }
+
+  .launch-banner {
+    padding: 1.5rem 0.7rem;
+  }
+
+  .launch-badge {
+    font-size: 0.62rem;
+
+    padding: 0.4rem 0.75rem;
+  }
+
+  .title-dramatico {
+    font-size: 2.1rem;
+  }
+
+  .launch-description {
+    font-size: 0.95rem;
+  }
+
+  .launch-server {
+    min-height: 160px;
+  }
+
+  .server-name {
+    font-size: 1.3rem;
+  }
+
+  .server-type {
+    font-size: 0.78rem;
+  }
+
+  .server-rate {
+    font-size: 1.05rem;
+  }
+
+  .server-status {
+    font-size: 0.65rem;
+  }
+
+  .new-badge {
+    font-size: 0.52rem;
+
+    top: 0.45rem;
+
+    right: 0.45rem;
+  }
+
+}

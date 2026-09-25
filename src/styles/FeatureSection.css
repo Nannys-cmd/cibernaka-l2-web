@@ -1,0 +1,180 @@
+/* =========================================
+   FEATURE SECTION
+========================================= */
+
+.features-section {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.features-header {
+  max-width: 850px;
+  margin: 0 auto 3rem;
+}
+
+.section-kicker {
+  display: inline-block;
+
+  margin-bottom: 1rem;
+
+  color: var(--color-principal);
+
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.features-section h2 {
+  margin-bottom: 1rem;
+
+  font-family: var(--font-titulo);
+  font-size: 2.8rem;
+
+  color: #ffd700;
+
+  text-shadow:
+    0 0 10px rgba(255, 215, 0, 0.5),
+    0 0 25px rgba(255, 215, 0, 0.3);
+}
+
+.features-description {
+  max-width: 750px;
+
+  margin: 0 auto;
+
+  color: var(--color-texto);
+
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   GRID DE CARACTERÍSTICAS
+========================================= */
+
+.features-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(260px, 1fr));
+
+  gap: 2rem;
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+.feature-card {
+  position: relative;
+
+  padding: 2rem 1.5rem;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(0, 0, 0, 0.85),
+      rgba(30, 20, 10, 0.85)
+    );
+
+  border: 1px solid rgba(255, 215, 0, 0.4);
+  border-radius: 15px;
+
+  box-shadow:
+    0 0 20px rgba(0, 0, 0, 0.6);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(255, 215, 0, 0.8);
+
+  box-shadow:
+    0 0 25px rgba(255, 215, 0, 0.35);
+}
+
+
+/* =========================================
+   ICONOS
+========================================= */
+
+.feature-icon {
+  margin-bottom: 1rem;
+
+  font-size: 2.5rem;
+
+  filter:
+    drop-shadow(0 0 8px rgba(255, 215, 0, 0.35));
+}
+
+
+/* =========================================
+   TÍTULOS DE LAS TARJETAS
+========================================= */
+
+.feature-card h3 {
+  margin-bottom: 1rem;
+
+  color: #ffd700;
+
+  font-size: 1.3rem;
+}
+
+
+/* =========================================
+   DESCRIPCIÓN
+========================================= */
+
+.feature-card p {
+  color: #ddd;
+
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .features-section {
+    padding: 3rem 1rem;
+  }
+
+  .features-section h2 {
+    font-size: 2rem;
+  }
+
+  .features-description {
+    font-size: 1rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .feature-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+}
