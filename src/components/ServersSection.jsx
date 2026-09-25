@@ -26,19 +26,17 @@ const servers = [
   {
     name: "Anakim",
     type: "FULL PVP",
-    mode: "x1",
+    mode: "x5000",
     icon: "☠️",
     description:
-      "La experiencia clásica de Lineage 2 High Five para quienes buscan un verdadero desafío desde el comienzo.",
+      "Entrá al campo de batalla desde el primer momento. Un servidor Full PvP pensado para quienes buscan acción, combate y adrenalina sin esperas.",
     features: [
-      "100% Retail",
-      "Sin GMShop",
-      "Sin NPC Buffer",
-      "Sin GK Global",
-      "Sin Autofarm",
-      "Server Craft desde Grado S",
-      "Buffs con duración de 1 hora",
-      "Progreso completamente desafiante",
+      "GMShop",
+      "GK Global",
+      "Armas y Armaduras Custom",
+      "Zonas Custom de Farmeo",
+      "Eventos automaticos",
+      "Nivel 85 instantáneo",
     ],
   },
   {
