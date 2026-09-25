@@ -125,7 +125,7 @@ function App() {
                 </span>
 
                 <span className="server-status">
-                  ☠️ FULL PVP - BETA ONLINE HASTA MAÑANA - LANZAMIENTO OFICIAL EL 26/09
+                  ☠️ FULL PVP - BETA ONLINE HASTA EL 25/09 - LANZAMIENTO OFICIAL EL 26/09
                 </span>
 
               </article>
