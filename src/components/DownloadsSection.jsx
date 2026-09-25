@@ -1,3 +1,5 @@
+// src/components/DownloadsSection.jsx
+
 import React from "react";
 import "../styles/DownloadsSection.css";
 
@@ -19,11 +21,19 @@ const downloads = [
     icon: "📥",
   },
   {
-    title: "⚔️ Parche V1",
+    title: "⚔️ Parche V1 (Opción 1)",
     description:
       "Incluye los nuevos cambios realizados en el server.",
     platform: "MediaFire",
     url: "https://www.mediafire.com/file/ucv2nh5roi71grr/Parche_CiberNaka_L2_V1_2026.rar/file",
+    icon: "📥",
+  },
+    {
+    title: "⚔️ Parche V1 (Opción 2)",
+    description:
+      "Incluye los nuevos cambios realizados en el server.",
+    platform: "Google Drive",
+    url: "https://drive.google.com/file/d/1vCyxvs3cZ9ErkX6MrFV8Myz5NajVosbF/view?usp=sharing",
     icon: "📥",
   },
 ];
