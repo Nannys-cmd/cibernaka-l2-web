@@ -28,6 +28,7 @@ const servers = [
     type: "FULL PVP",
     mode: "x5000",
     icon: "☠️",
+    badge: "🆕 NUEVO",
     description:
       "Entrá al campo de batalla desde el primer momento. Un servidor Full PvP pensado para quienes buscan acción, combate y adrenalina sin esperas.",
     features: [
@@ -44,7 +45,6 @@ const servers = [
     type: "SUB-ACU",
     mode: "x5",
     icon: "⚔️",
-    badge: "🆕 NUEVO",
     description:
       "Una nueva experiencia Sub-Acu x5 para quienes buscan una progresión diferente, dinámica y accesible.",
     features: [
